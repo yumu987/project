@@ -1,0 +1,32 @@
+NIMA:
+https://arxiv.org/abs/1709.05424 https://arxiv.org/pdf/1709.05424.pdf
+https://blog.research.google/2017/12/introducing-nima-neural-image-assessment.html
+
+AVA dataset:
+https://github.com/imfing/ava_downloader
+
+Image Super Resolution: (RDN) (RRDN[GANs])
+https://idealo.github.io/image-super-resolution/
+https://github.com/idealo/image-super-resolution/
+
+Image Quality Assessment: (NIMA)
+https://idealo.github.io/image-quality-assessment/
+https://github.com/idealo/image-quality-assessment/
+
+Reference paper:
+SelfExSR: https://github.com/jbhuang0604/SelfExSR (Set 5 dataset)
+
+RDN: https://arxiv.org/abs/1802.08797
+RRDN ESRGAN: https://arxiv.org/abs/1809.00219
+SRGANS: https://arxiv.org/abs/1609.04802
+DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/
+
+Comparison of commonly used image interpolation methods: https://www.semanticscholar.org/paper/Comparison-of-Commonly-Used-Image-Interpolation-Han/47408d4854044f900d6ee757ca322de983d702ce
+
+NIMA: https://arxiv.org/abs/1709.05424
+AVA: https://refbase.cvc.uab.es/files/MMP2012a.pdf
+TID2013: https://www.ponomarenko.info/tid2013.htm
+
+SSIM: https://www.cns.nyu.edu/~lcv/ssim/
+
+PSNR: https://ieeexplore.ieee.org/document/8980171 https://ieeexplore.ieee.org/document/5596999
