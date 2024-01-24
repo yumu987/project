@@ -1,0 +1,36 @@
+Index is: 0 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_psnr-large.png PSNR: 36.184033655905054
+Index is: 1 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_psnr-large.png PSNR: 35.136447453283594
+Index is: 2 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_psnr-large.png PSNR: 28.611339831136988
+Index is: 3 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_psnr-large.png PSNR: 31.628040575765894
+Index is: 4 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_psnr-large.png PSNR: 32.580165171407984
+Index is: 5 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_psnr-small.png PSNR: 36.94917371251516
+Index is: 6 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_psnr-small.png PSNR: 37.97456433751516
+Index is: 7 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_psnr-small.png PSNR: 30.54417421796255
+Index is: 8 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_psnr-small.png PSNR: 31.98852589108877
+Index is: 9 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_psnr-small.png PSNR: 34.0360622642272
+Index is: 10 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_noise-cancel.png PSNR: 29.605582260870264
+Index is: 11 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_noise-cancel.png PSNR: 27.711143994116114
+Index is: 12 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_noise-cancel.png PSNR: 25.03183176495962
+Index is: 13 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_noise-cancel.png PSNR: 27.97079136350088
+Index is: 14 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_noise-cancel.png PSNR: 28.378961586736963
+Index is: 15 Reference image: Set5_SR/Set5/image_SRF_4/img_001_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_001_SRF_4_RRDN_gans.png PSNR: 29.81303622701101
+Index is: 16 Reference image: Set5_SR/Set5/image_SRF_4/img_002_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_002_SRF_4_RRDN_gans.png PSNR: 28.71189286687307
+Index is: 17 Reference image: Set5_SR/Set5/image_SRF_4/img_003_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_003_SRF_4_RRDN_gans.png PSNR: 24.579828285955713
+Index is: 18 Reference image: Set5_SR/Set5/image_SRF_4/img_004_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_004_SRF_4_RRDN_gans.png PSNR: 28.41977646329336
+Index is: 19 Reference image: Set5_SR/Set5/image_SRF_4/img_005_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_005_SRF_4_RRDN_gans.png PSNR: 27.242379689001368
+Index is: 20 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/Noise/img_001_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 29.677869581960962
+Index is: 21 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/Noise/img_002_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 27.734625839971827
+Index is: 22 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/Noise/img_003_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 24.919252896093653
+Index is: 23 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/Noise/img_004_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 28.018126988195704
+Index is: 24 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/Noise/img_005_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 28.228984379553125
+Index is: 25 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/Noise/img_001_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 29.677869581960962
+Index is: 26 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/Noise/img_002_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 27.734625839971827
+Index is: 27 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/Noise/img_003_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 24.919252896093653
+Index is: 28 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/Noise/img_004_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 28.018126988195704
+Index is: 29 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/Noise/img_005_SRF_2_RDN_psnr-large_noise_cancel.png PSNR: 28.228984379553125
+Index is: 30 Reference image: Set5_SR/Set5/image_SRF_4/img_001_SRF_4_HR.png Super-resolution image: output/Noise/img_001_SRF_4_RRDN_gans_noise_cancel.png PSNR: 27.23696520306997
+Index is: 31 Reference image: Set5_SR/Set5/image_SRF_4/img_002_SRF_4_HR.png Super-resolution image: output/Noise/img_002_SRF_4_RRDN_gans_noise_cancel.png PSNR: 25.436647438787745
+Index is: 32 Reference image: Set5_SR/Set5/image_SRF_4/img_003_SRF_4_HR.png Super-resolution image: output/Noise/img_003_SRF_4_RRDN_gans_noise_cancel.png PSNR: 22.545817398809717
+Index is: 33 Reference image: Set5_SR/Set5/image_SRF_4/img_004_SRF_4_HR.png Super-resolution image: output/Noise/img_004_SRF_4_RRDN_gans_noise_cancel.png PSNR: 26.2589888808959
+Index is: 34 Reference image: Set5_SR/Set5/image_SRF_4/img_005_SRF_4_HR.png Super-resolution image: output/Noise/img_005_SRF_4_RRDN_gans_noise_cancel.png PSNR: 25.35280754544668
+
