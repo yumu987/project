@@ -1,0 +1,12 @@
+A Comparative Analysis of Image Quality Assessment Metrics in Single-Image Super-Resolution using Residual Dense Networks and Generative Adversarial Networks
+
+25 real-world images used in my project and questionnaire are taken by SONY ILCE-7RM3 camera (In short, called A7R3 or alpha7R3 and SONY ILCE-1 camera (In short, called A1 or alpha1). The lens utilised to take these images is FE 16-36mm F2.8GM; FE 100-400mm F4.5-5.6 OSS; FE 50mm F1.2 GM.
+
+Experiments:
+1. Pre-processing for downsampling images (5 methods)
+2. RDN and RRDN for upsamling images (4 methods) (3 ways RDN + 1 way RRDN [GAN])
+3. 5 * 4 = 20 (in total)
+4. Objective methods: (full reference) PSNR, SSIM and MSE to rate the quality of 20 ways (Pre-processing + RDN/RRDN super-resolution methods)
+5. NIMA (Main focus) (NIMA to test the original images) (3 different NIMA models)
+6. Subjective methods: to rate the original images, and compare with NIMA (To compare the score produced by machine and the score produced by human visual system) (Under same original images)
+7. Discuss possible ways to optimise NIMA (3 different NIMA models)

@@ -1,0 +1,5 @@
+LR + SISR + downsampling (bilinear) + noise-cancel
+
+The python scripts here are no longer used in later experiments
+
+They are archived here

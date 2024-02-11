@@ -1,0 +1,32 @@
+subjective image quality assessment metric:
+objective image quality assessment metric:
+
+1. Find some newer data set
+The original images have very high resolution nowadays.
+This is what we have nowadays.
+Use data set with higher resolution: that's what we did nowadays.
+
+2. For the next meeting, write down a
+create a small diagram for what you want to include in your results
+a. what models you're going to test
+b. what data sets
+c. what resolution
+d. what quality metrics
+e. if we're testing a 2 step approach, we have to decide what will be the first level, the first level of interpolation, normally it is bicubic.
+You might have choice, to do the first step.
+Minimising a certain loss function.
+Optimising a certain quality metric
+
+Goal: evaluate the performance of 3 different models. Then you will know what exactly experiments you want to do.
+
+Do counterpart experiments.
+
+Compare how they perform. What about others?
+
+Want to introduce a new image quality metric in the procedure. You optimise and do test.
+
+What you need to write now: think about what the results after will look like.
+
+If you know what the results after will look like then you know what experiments you need to do.
+
+Result section. 

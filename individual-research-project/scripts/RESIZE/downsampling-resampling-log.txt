@@ -1,0 +1,15 @@
+INFO:root:################################################################################################
+INFO:root:Downsampling | nearest-neighbor half processing time: 13.579487800598145 seconds
+INFO:root:Downsampling | bilinear half processing time: 12.113048315048218 seconds
+INFO:root:Downsampling | bicubic half processing time: 12.44765591621399 seconds
+INFO:root:Downsampling | lanczos half processing time: 14.665237665176392 seconds
+INFO:root:################################################################################################
+INFO:root:Downsampling | nearest-neighbor quarter processing time: 9.499519109725952 seconds
+INFO:root:Downsampling | bilinear quarter processing time: 9.254964590072632 seconds
+INFO:root:Downsampling | bicubic quarter processing time: 9.390218496322632 seconds
+INFO:root:Downsampling | lanczos quarter processing time: 9.587260961532593 seconds
+INFO:root:################################################################################################
+INFO:root:################################################################################################
+INFO:root:Resampling | pixel area relation half processing time: 12.122706413269043 seconds
+INFO:root:Resampling | pixel area relation quarter processing time: 9.792964935302734 seconds
+INFO:root:################################################################################################

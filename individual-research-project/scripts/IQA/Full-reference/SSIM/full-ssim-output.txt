@@ -1,36 +1,0 @@
-Index is: 0 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_psnr-large.png SSIM: 0.9627246244016494
-Index is: 1 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_psnr-large.png SSIM: 0.9725473344164072
-Index is: 2 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_psnr-large.png SSIM: 0.9379033860853212
-Index is: 3 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_psnr-large.png SSIM: 0.8777645834073853
-Index is: 4 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_psnr-large.png SSIM: 0.9632417274771674
-Index is: 5 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_psnr-small.png SSIM: 0.9668634072379404
-Index is: 6 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_psnr-small.png SSIM: 0.9837158274631687
-Index is: 7 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_psnr-small.png SSIM: 0.9554349830336872
-Index is: 8 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_psnr-small.png SSIM: 0.8838235696130908
-Index is: 9 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_psnr-small.png SSIM: 0.9704079445782099
-Index is: 10 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/RDN/img_001_SRF_2_RDN_noise-cancel.png SSIM: 0.8911744690655928
-Index is: 11 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/RDN/img_002_SRF_2_RDN_noise-cancel.png SSIM: 0.905987155065286
-Index is: 12 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/RDN/img_003_SRF_2_RDN_noise-cancel.png SSIM: 0.9074961332218766
-Index is: 13 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/RDN/img_004_SRF_2_RDN_noise-cancel.png SSIM: 0.7673571684809027
-Index is: 14 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/RDN/img_005_SRF_2_RDN_noise-cancel.png SSIM: 0.9126954236049584
-Index is: 15 Reference image: Set5_SR/Set5/image_SRF_4/img_001_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_001_SRF_4_RRDN_gans.png SSIM: 0.8408610455950004
-Index is: 16 Reference image: Set5_SR/Set5/image_SRF_4/img_002_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_002_SRF_4_RRDN_gans.png SSIM: 0.888369246253227
-Index is: 17 Reference image: Set5_SR/Set5/image_SRF_4/img_003_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_003_SRF_4_RRDN_gans.png SSIM: 0.8528541090590426
-Index is: 18 Reference image: Set5_SR/Set5/image_SRF_4/img_004_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_004_SRF_4_RRDN_gans.png SSIM: 0.7299001866625665
-Index is: 19 Reference image: Set5_SR/Set5/image_SRF_4/img_005_SRF_4_HR.png Super-resolution image: output/RRDN_gans/img_005_SRF_4_RRDN_gans.png SSIM: 0.8726831064351945
-Index is: 20 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/Noise/img_001_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.8890262920445684
-Index is: 21 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/Noise/img_002_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9037258385270669
-Index is: 22 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/Noise/img_003_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9051851046764227
-Index is: 23 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/Noise/img_004_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.7684766390505122
-Index is: 24 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/Noise/img_005_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9122248361285785
-Index is: 25 Reference image: Set5_SR/Set5/image_SRF_2/img_001_SRF_2_HR.png Super-resolution image: output/Noise/img_001_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.8890262920445684
-Index is: 26 Reference image: Set5_SR/Set5/image_SRF_2/img_002_SRF_2_HR.png Super-resolution image: output/Noise/img_002_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9037258385270669
-Index is: 27 Reference image: Set5_SR/Set5/image_SRF_2/img_003_SRF_2_HR.png Super-resolution image: output/Noise/img_003_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9051851046764227
-Index is: 28 Reference image: Set5_SR/Set5/image_SRF_2/img_004_SRF_2_HR.png Super-resolution image: output/Noise/img_004_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.7684766390505122
-Index is: 29 Reference image: Set5_SR/Set5/image_SRF_2/img_005_SRF_2_HR.png Super-resolution image: output/Noise/img_005_SRF_2_RDN_psnr-large_noise_cancel.png SSIM: 0.9122248361285785
-Index is: 30 Reference image: Set5_SR/Set5/image_SRF_4/img_001_SRF_4_HR.png Super-resolution image: output/Noise/img_001_SRF_4_RRDN_gans_noise_cancel.png SSIM: 0.8316667968132376
-Index is: 31 Reference image: Set5_SR/Set5/image_SRF_4/img_002_SRF_4_HR.png Super-resolution image: output/Noise/img_002_SRF_4_RRDN_gans_noise_cancel.png SSIM: 0.8492552674489493
-Index is: 32 Reference image: Set5_SR/Set5/image_SRF_4/img_003_SRF_4_HR.png Super-resolution image: output/Noise/img_003_SRF_4_RRDN_gans_noise_cancel.png SSIM: 0.8600191120765426
-Index is: 33 Reference image: Set5_SR/Set5/image_SRF_4/img_004_SRF_4_HR.png Super-resolution image: output/Noise/img_004_SRF_4_RRDN_gans_noise_cancel.png SSIM: 0.6891212715514133
-Index is: 34 Reference image: Set5_SR/Set5/image_SRF_4/img_005_SRF_4_HR.png Super-resolution image: output/Noise/img_005_SRF_4_RRDN_gans_noise_cancel.png SSIM: 0.8532510125156638
-

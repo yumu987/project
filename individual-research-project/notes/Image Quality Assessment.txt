@@ -1,0 +1,11 @@
+Full reference
+original vs ideal
+
+No reference
+without access to original / reference
+
+Objective
+numerical metrics & algorithms
+
+Subjective
+human observers / visual experience

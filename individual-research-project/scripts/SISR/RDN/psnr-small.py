@@ -1,0 +1,537 @@
+################################################
+# RDN: psnr-small
+# https://github.com/idealo/image-super-resolution/
+# @misc{cardinale2018isr,
+#   title={ISR},
+#   author={Francesco Cardinale et al.},
+#   year={2018},
+#   howpublished={\url{https://github.com/idealo/image-super-resolution}},
+# }
+################################################
+
+################################################
+# Dataset from Nick Yue
+# Special thanks to nick :)
+# Pre-processing images produced by Yumu Xie
+################################################
+
+################################################
+#
+# EENG30009 Individual Research Project 3
+# TOPIC: Single-image Super-resolution
+#
+# Yumu Xie
+# University of Bristol
+#
+################################################
+
+################################################
+# Programming environment: WSL Linux subsystem of Windows
+# Python version: 3.7.9
+# Python setup is based on 'pyenv' (Simple Python version management)
+# https://github.com/pyenv/pyenv
+#
+# ISR, OpenCV, Matplotlib, Pandas and Numpy packages are required in this script
+# Instruction of installing packages:
+# pip install ISR
+# pip install opencv-python
+# pip install matplotlib
+# pip install pandas
+# pip install numpy
+#
+# The scale factor of RDN psnr-small model is 2
+# For example, an input image has resolution (x, y)
+# After RDN psnr-small model, the output image will have resolution (2x, 2y)
+#
+# The purpose of this script is to execute super-resolution of RDN psnr-small model
+# [input_image] -> [RDN(psnr-small)] -> [output_image]
+################################################
+
+################################################
+# Please ensure that the folders contain input images are named as following:
+# "nearest_neighbor_half"
+# "bilinear_half"
+# "bicubic_half"
+# "lanczos_half"
+# "pixel_area_relation_half"
+# Please create folders to contain output images:
+# "nearest_neighbor_psnr_small"
+# "bilinear_psnr_small"
+# "bicubic_psnr_small"
+# "lanczos_psnr_small"
+# "pixel_area_relation_psnr_small"
+################################################
+
+################################################
+# RDN psnr-small
+import cv2
+from ISR.models import RDN
+import time
+################################################
+
+################################################
+# Table
+import matplotlib.pyplot as plt
+import pandas as pd
+from pandas.plotting import table
+import numpy as np
+################################################
+
+################################################
+# Input images
+################################################
+# Nearest-neighbor
+nearest_neighbor_half_image_files = ['nearest_neighbor_half/001_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/002_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/003_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/004_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/005_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/006_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/007_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/008_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/009_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/010_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/011_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/012_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/013_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/014_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/015_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/016_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/017_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/018_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/019_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/020_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/021_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/022_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/023_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/024_nearest_neighbor_half.jpg',
+                                        'nearest_neighbor_half/025_nearest_neighbor_half.jpg']
+# Bilinear
+bilinear_half_image_files = ['bilinear_half/001_bilinear_half.jpg',
+                                'bilinear_half/002_bilinear_half.jpg',
+                                'bilinear_half/003_bilinear_half.jpg',
+                                'bilinear_half/004_bilinear_half.jpg',
+                                'bilinear_half/005_bilinear_half.jpg',
+                                'bilinear_half/006_bilinear_half.jpg',
+                                'bilinear_half/007_bilinear_half.jpg',
+                                'bilinear_half/008_bilinear_half.jpg',
+                                'bilinear_half/009_bilinear_half.jpg',
+                                'bilinear_half/010_bilinear_half.jpg',
+                                'bilinear_half/011_bilinear_half.jpg',
+                                'bilinear_half/012_bilinear_half.jpg',
+                                'bilinear_half/013_bilinear_half.jpg',
+                                'bilinear_half/014_bilinear_half.jpg',
+                                'bilinear_half/015_bilinear_half.jpg',
+                                'bilinear_half/016_bilinear_half.jpg',
+                                'bilinear_half/017_bilinear_half.jpg',
+                                'bilinear_half/018_bilinear_half.jpg',
+                                'bilinear_half/019_bilinear_half.jpg',
+                                'bilinear_half/020_bilinear_half.jpg',
+                                'bilinear_half/021_bilinear_half.jpg',
+                                'bilinear_half/022_bilinear_half.jpg',
+                                'bilinear_half/023_bilinear_half.jpg',
+                                'bilinear_half/024_bilinear_half.jpg',
+                                'bilinear_half/025_bilinear_half.jpg']
+# Bicubic
+bicubic_half_image_files = ['bicubic_half/001_bicubic_half.jpg',
+                               'bicubic_half/002_bicubic_half.jpg',
+                               'bicubic_half/003_bicubic_half.jpg',
+                               'bicubic_half/004_bicubic_half.jpg',
+                               'bicubic_half/005_bicubic_half.jpg',
+                               'bicubic_half/006_bicubic_half.jpg',
+                               'bicubic_half/007_bicubic_half.jpg',
+                               'bicubic_half/008_bicubic_half.jpg',
+                               'bicubic_half/009_bicubic_half.jpg',
+                               'bicubic_half/010_bicubic_half.jpg',
+                               'bicubic_half/011_bicubic_half.jpg',
+                               'bicubic_half/012_bicubic_half.jpg',
+                               'bicubic_half/013_bicubic_half.jpg',
+                               'bicubic_half/014_bicubic_half.jpg',
+                               'bicubic_half/015_bicubic_half.jpg',
+                               'bicubic_half/016_bicubic_half.jpg',
+                               'bicubic_half/017_bicubic_half.jpg',
+                               'bicubic_half/018_bicubic_half.jpg',
+                               'bicubic_half/019_bicubic_half.jpg',
+                               'bicubic_half/020_bicubic_half.jpg',
+                               'bicubic_half/021_bicubic_half.jpg',
+                               'bicubic_half/022_bicubic_half.jpg',
+                               'bicubic_half/023_bicubic_half.jpg',
+                               'bicubic_half/024_bicubic_half.jpg',
+                               'bicubic_half/025_bicubic_half.jpg']
+# Lanczos
+lanczos_half_image_files = ['lanczos_half/001_lanczos_half.jpg',
+                               'lanczos_half/002_lanczos_half.jpg',
+                               'lanczos_half/003_lanczos_half.jpg',
+                               'lanczos_half/004_lanczos_half.jpg',
+                               'lanczos_half/005_lanczos_half.jpg',
+                               'lanczos_half/006_lanczos_half.jpg',
+                               'lanczos_half/007_lanczos_half.jpg',
+                               'lanczos_half/008_lanczos_half.jpg',
+                               'lanczos_half/009_lanczos_half.jpg',
+                               'lanczos_half/010_lanczos_half.jpg',
+                               'lanczos_half/011_lanczos_half.jpg',
+                               'lanczos_half/012_lanczos_half.jpg',
+                               'lanczos_half/013_lanczos_half.jpg',
+                               'lanczos_half/014_lanczos_half.jpg',
+                               'lanczos_half/015_lanczos_half.jpg',
+                               'lanczos_half/016_lanczos_half.jpg',
+                               'lanczos_half/017_lanczos_half.jpg',
+                               'lanczos_half/018_lanczos_half.jpg',
+                               'lanczos_half/019_lanczos_half.jpg',
+                               'lanczos_half/020_lanczos_half.jpg',
+                               'lanczos_half/021_lanczos_half.jpg',
+                               'lanczos_half/022_lanczos_half.jpg',
+                               'lanczos_half/023_lanczos_half.jpg',
+                               'lanczos_half/024_lanczos_half.jpg',
+                               'lanczos_half/025_lanczos_half.jpg']
+# Pixel area relation
+pixel_area_relation_half_image_files = ['pixel_area_relation_half/001_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/002_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/003_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/004_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/005_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/006_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/007_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/008_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/009_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/010_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/011_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/012_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/013_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/014_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/015_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/016_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/017_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/018_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/019_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/020_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/021_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/022_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/023_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/024_pixel_area_relation_half.jpg',
+                                           'pixel_area_relation_half/025_pixel_area_relation_half.jpg']
+
+################################################
+# Output images
+################################################
+# Nearest-neighbor (psnr-small)
+nearest_neighbor_psnr_small_image_files = [   'nearest_neighbor_psnr_small/001_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/002_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/003_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/004_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/005_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/006_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/007_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/008_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/009_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/010_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/011_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/012_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/013_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/014_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/015_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/016_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/017_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/018_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/019_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/020_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/021_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/022_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/023_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/024_nearest_neighbor_psnr_small.jpg',
+                                        'nearest_neighbor_psnr_small/025_nearest_neighbor_psnr_small.jpg']
+# Bilinear (psnr-small)
+bilinear_psnr_small_image_files = [   'bilinear_psnr_small/001_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/002_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/003_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/004_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/005_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/006_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/007_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/008_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/009_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/010_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/011_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/012_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/013_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/014_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/015_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/016_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/017_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/018_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/019_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/020_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/021_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/022_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/023_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/024_bilinear_psnr_small.jpg',
+                                'bilinear_psnr_small/025_bilinear_psnr_small.jpg']
+# Bicubic (psnr-small)
+bicubic_psnr_small_image_files = [   'bicubic_psnr_small/001_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/002_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/003_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/004_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/005_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/006_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/007_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/008_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/009_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/010_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/011_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/012_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/013_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/014_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/015_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/016_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/017_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/018_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/019_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/020_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/021_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/022_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/023_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/024_bicubic_psnr_small.jpg',
+                               'bicubic_psnr_small/025_bicubic_psnr_small.jpg']
+# Lanczos (psnr-small)
+lanczos_psnr_small_image_files = [   'lanczos_psnr_small/001_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/002_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/003_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/004_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/005_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/006_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/007_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/008_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/009_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/010_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/011_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/012_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/013_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/014_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/015_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/016_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/017_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/018_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/019_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/020_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/021_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/022_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/023_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/024_lanczos_psnr_small.jpg',
+                               'lanczos_psnr_small/025_lanczos_psnr_small.jpg']
+# Pixel area relation (psnr-small)
+pixel_area_relation_psnr_small_image_files = [   'pixel_area_relation_psnr_small/001_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/002_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/003_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/004_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/005_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/006_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/007_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/008_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/009_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/010_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/011_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/012_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/013_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/014_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/015_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/016_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/017_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/018_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/019_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/020_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/021_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/022_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/023_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/024_pixel_area_relation_psnr_small.jpg',
+                                           'pixel_area_relation_psnr_small/025_pixel_area_relation_psnr_small.jpg']
+
+# super_resolve_image function
+def super_resolve_image(input_path, output_path, model_path = 'psnr-small'):
+    try:
+        # Read the input image
+        img = cv2.imread(input_path)
+        # Handle file not found error
+        if img is None:
+            raise FileNotFoundError(f"Error: Unable to read input image at {input_file}")
+        # Initialise the RDN model
+        model = RDN(weights=model_path)
+        # Perform super-resolution of 'psnr-small' model
+        sr_img = model.predict(img)
+        # Save the output image
+        cv2.imwrite(output_path, sr_img)
+    except FileNotFoundError as e:
+        # Handle file not found exception
+        print(f"File not found: {e}")
+    except Exception as e:
+        # Handle other exceptions
+        print(f"An exception occurred: {e}")
+
+# main
+if __name__ == "__main__":
+
+    print("RDN psnr-small part is starting")
+
+    # Start time
+    start_time = time.time()
+
+    # Nearest-neighbor
+    # Load data set and perform super-resolution
+    nearest_neighbor_start_time = time.time()
+    for i in range(25): # len(input_image_files) / len(output_image_files
+        input_file = nearest_neighbor_half_image_files[i]
+        output_file = nearest_neighbor_psnr_small_image_files[i]
+        super_resolve_image(input_file, output_file)
+    nearest_neighbor_end_time = time.time()
+    nearest_neighbor_elapsed_time = nearest_neighbor_end_time - nearest_neighbor_start_time
+    nearest_neighbor_average_time = nearest_neighbor_elapsed_time/25
+
+    # Bilinear
+    # Load data set and perform super-resolution
+    bilinear_start_time = time.time()
+    for i in range(25): # len(input_image_files) / len(output_image_files
+        input_file = bilinear_half_image_files[i]
+        output_file = bilinear_psnr_small_image_files[i]
+        super_resolve_image(input_file, output_file)
+    bilinear_end_time = time.time()
+    bilinear_elapsed_time = bilinear_end_time - bilinear_start_time
+    bilinear_average_time = bilinear_elapsed_time/25
+
+    # Bicubic
+    # Load data set and perform super-resolution
+    bicubic_start_time = time.time()
+    for i in range(25): # len(input_image_files) / len(output_image_files
+        input_file = bicubic_half_image_files[i]
+        output_file = bicubic_psnr_small_image_files[i]
+        super_resolve_image(input_file, output_file)
+    bicubic_end_time = time.time()
+    bicubic_elapsed_time = bicubic_end_time - bicubic_start_time
+    bicubic_average_time = bicubic_elapsed_time/25
+
+    # Lanczos
+    # Load data set and perform super-resolution
+    lanczos_start_time = time.time()
+    for i in range(25): # len(input_image_files) / len(output_image_files
+        input_file = lanczos_half_image_files[i]
+        output_file = lanczos_psnr_small_image_files[i]
+        super_resolve_image(input_file, output_file)
+    lanczos_end_time = time.time()
+    lanczos_elapsed_time = lanczos_end_time - lanczos_start_time
+    lanczos_average_time = lanczos_elapsed_time/25
+
+    # Pixel area relation
+    # Load data set and perform super-resolution
+    pixel_area_relation_start_time = time.time()
+    for i in range(25): # len(input_image_files) / len(output_image_files
+        input_file = pixel_area_relation_half_image_files[i]
+        output_file = pixel_area_relation_psnr_small_image_files[i]
+        super_resolve_image(input_file, output_file)
+    pixel_area_relation_end_time = time.time()
+    pixel_area_relation_elapsed_time = pixel_area_relation_end_time - pixel_area_relation_start_time
+    pixel_area_relation_average_time = pixel_area_relation_elapsed_time/25
+
+    # End time
+    end_time = time.time()
+
+    # Total processing time
+    elapsed_time = end_time - start_time
+
+    # Average processing time
+    average_time = elapsed_time/125
+
+    # Display the processsing time
+    print(f"RDN: psnr-small | total processing time: {elapsed_time} seconds")
+    print(f"RDN: psnr-small | average processing time: {average_time} seconds")
+
+    # Indication of super-resolution completed
+    print(f"RDN: psnr-small | Super-resolution completed")
+
+    ####################
+    # Plotting diagram part: table
+    ####################
+
+    # Data to be used to plot table
+    data = {
+        'Processing metrics' : ['Nearest-neighbor + psnr-small',
+                                'Bilinear + psnr-small',
+                                'Bicubic + psnr-small',
+                                'Lanczos + psnr-small',
+                                'Pixel area relation + psnr-small',
+                                'Total'
+                                ],
+        'Scale' : ['2',
+                   '2',
+                   '2',
+                   '2',
+                   '2',
+                   '2'
+                   ],
+        'Processing time' : [nearest_neighbor_elapsed_time,
+                             bilinear_elapsed_time,
+                             bicubic_elapsed_time,
+                             lanczos_elapsed_time,
+                             pixel_area_relation_elapsed_time,
+                             elapsed_time
+                             ],
+        'Average processing time' : [nearest_neighbor_average_time,
+                                     bilinear_average_time,
+                                     bicubic_average_time,
+                                     lanczos_average_time,
+                                     pixel_area_relation_average_time,
+                                     average_time]
+    }
+
+    # Convert the data into a pandas DataFrame
+    df = pd.DataFrame(data)
+    df.fillna('-', inplace=True) # Replacing missing values with '-'
+
+    # Create a figure to plot the table
+    fig, ax = plt.subplots(figsize=(12, 8)) # Size should be adjusted to match the aspect ratio of your data
+    ax.axis('off') # Hide the axes
+
+    #############################
+    # Table properties
+    #############################
+
+    #############################
+    # Loose version of table
+    # Table will take more space
+    #############################
+    # tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
+    # tab.auto_set_font_size(False)
+    # tab.set_fontsize(10)
+    # tab.scale(1.2, 1.2)  # Scale table size
+
+    #############################
+    # Plot the table
+    #############################
+    # Compact version of table
+    # Table will take less space
+    #############################
+    tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
+    tab.auto_set_font_size(False)
+    tab.set_fontsize(10) # Adjust to match the font size in your image
+    tab.auto_set_column_width(col=list(range(len(df.columns)))) # Adjust column widths
+
+    # Style the table
+    for (i, j), val in np.ndenumerate(df.values):
+        if j == 0: # First column
+            tab[(i+1, j)].set_facecolor('#dddddd') # Shade the first column
+        if j == -1 or j == 0: # Header or first column
+            tab[(i+1, j)].set_text_props(weight='bold') # Bold the font of first column
+
+    # Add the title
+    plt.suptitle('TABLE\nThe processing time of RDN psnr-small model', fontsize=14, weight='bold')
+
+    # Save the figure as a PDF
+    pdf_file = 'psnr-small.pdf'
+    plt.savefig(pdf_file, bbox_inches='tight', pad_inches=0.05)
+
+    # Save the figure as an image (PNG)
+    png_file = 'psnr-small.png'
+    plt.savefig(png_file, bbox_inches='tight', pad_inches=0.05, dpi=300)
+
+    # Close the matplotlib figure
+    plt.close(fig)
+
+    # Indication of plotting table completed
+    print("Plotting table completed")
