@@ -212,6 +212,140 @@ pixel_area_relation_half_image_files = ['pixel_area_relation_half/001_pixel_area
                                            'pixel_area_relation_half/025_pixel_area_relation_half.jpg']
 
 ################################################
+# Input images
+################################################
+# Nearest-neighbor
+nearest_neighbor_quarter_image_files = ['nearest_neighbor_quarter/001_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/002_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/003_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/004_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/005_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/006_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/007_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/008_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/009_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/010_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/011_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/012_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/013_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/014_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/015_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/016_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/017_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/018_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/019_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/020_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/021_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/022_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/023_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/024_nearest_neighbor_quarter.jpg',
+                                        'nearest_neighbor_quarter/025_nearest_neighbor_quarter.jpg']
+# Bilinear
+bilinear_quarter_image_files = ['bilinear_quarter/001_bilinear_quarter.jpg',
+                                'bilinear_quarter/002_bilinear_quarter.jpg',
+                                'bilinear_quarter/003_bilinear_quarter.jpg',
+                                'bilinear_quarter/004_bilinear_quarter.jpg',
+                                'bilinear_quarter/005_bilinear_quarter.jpg',
+                                'bilinear_quarter/006_bilinear_quarter.jpg',
+                                'bilinear_quarter/007_bilinear_quarter.jpg',
+                                'bilinear_quarter/008_bilinear_quarter.jpg',
+                                'bilinear_quarter/009_bilinear_quarter.jpg',
+                                'bilinear_quarter/010_bilinear_quarter.jpg',
+                                'bilinear_quarter/011_bilinear_quarter.jpg',
+                                'bilinear_quarter/012_bilinear_quarter.jpg',
+                                'bilinear_quarter/013_bilinear_quarter.jpg',
+                                'bilinear_quarter/014_bilinear_quarter.jpg',
+                                'bilinear_quarter/015_bilinear_quarter.jpg',
+                                'bilinear_quarter/016_bilinear_quarter.jpg',
+                                'bilinear_quarter/017_bilinear_quarter.jpg',
+                                'bilinear_quarter/018_bilinear_quarter.jpg',
+                                'bilinear_quarter/019_bilinear_quarter.jpg',
+                                'bilinear_quarter/020_bilinear_quarter.jpg',
+                                'bilinear_quarter/021_bilinear_quarter.jpg',
+                                'bilinear_quarter/022_bilinear_quarter.jpg',
+                                'bilinear_quarter/023_bilinear_quarter.jpg',
+                                'bilinear_quarter/024_bilinear_quarter.jpg',
+                                'bilinear_quarter/025_bilinear_quarter.jpg']
+# Bicubic
+bicubic_quarter_image_files = ['bicubic_quarter/001_bicubic_quarter.jpg',
+                               'bicubic_quarter/002_bicubic_quarter.jpg',
+                               'bicubic_quarter/003_bicubic_quarter.jpg',
+                               'bicubic_quarter/004_bicubic_quarter.jpg',
+                               'bicubic_quarter/005_bicubic_quarter.jpg',
+                               'bicubic_quarter/006_bicubic_quarter.jpg',
+                               'bicubic_quarter/007_bicubic_quarter.jpg',
+                               'bicubic_quarter/008_bicubic_quarter.jpg',
+                               'bicubic_quarter/009_bicubic_quarter.jpg',
+                               'bicubic_quarter/010_bicubic_quarter.jpg',
+                               'bicubic_quarter/011_bicubic_quarter.jpg',
+                               'bicubic_quarter/012_bicubic_quarter.jpg',
+                               'bicubic_quarter/013_bicubic_quarter.jpg',
+                               'bicubic_quarter/014_bicubic_quarter.jpg',
+                               'bicubic_quarter/015_bicubic_quarter.jpg',
+                               'bicubic_quarter/016_bicubic_quarter.jpg',
+                               'bicubic_quarter/017_bicubic_quarter.jpg',
+                               'bicubic_quarter/018_bicubic_quarter.jpg',
+                               'bicubic_quarter/019_bicubic_quarter.jpg',
+                               'bicubic_quarter/020_bicubic_quarter.jpg',
+                               'bicubic_quarter/021_bicubic_quarter.jpg',
+                               'bicubic_quarter/022_bicubic_quarter.jpg',
+                               'bicubic_quarter/023_bicubic_quarter.jpg',
+                               'bicubic_quarter/024_bicubic_quarter.jpg',
+                               'bicubic_quarter/025_bicubic_quarter.jpg']
+# Lanczos
+lanczos_quarter_image_files = ['lanczos_quarter/001_lanczos_quarter.jpg',
+                               'lanczos_quarter/002_lanczos_quarter.jpg',
+                               'lanczos_quarter/003_lanczos_quarter.jpg',
+                               'lanczos_quarter/004_lanczos_quarter.jpg',
+                               'lanczos_quarter/005_lanczos_quarter.jpg',
+                               'lanczos_quarter/006_lanczos_quarter.jpg',
+                               'lanczos_quarter/007_lanczos_quarter.jpg',
+                               'lanczos_quarter/008_lanczos_quarter.jpg',
+                               'lanczos_quarter/009_lanczos_quarter.jpg',
+                               'lanczos_quarter/010_lanczos_quarter.jpg',
+                               'lanczos_quarter/011_lanczos_quarter.jpg',
+                               'lanczos_quarter/012_lanczos_quarter.jpg',
+                               'lanczos_quarter/013_lanczos_quarter.jpg',
+                               'lanczos_quarter/014_lanczos_quarter.jpg',
+                               'lanczos_quarter/015_lanczos_quarter.jpg',
+                               'lanczos_quarter/016_lanczos_quarter.jpg',
+                               'lanczos_quarter/017_lanczos_quarter.jpg',
+                               'lanczos_quarter/018_lanczos_quarter.jpg',
+                               'lanczos_quarter/019_lanczos_quarter.jpg',
+                               'lanczos_quarter/020_lanczos_quarter.jpg',
+                               'lanczos_quarter/021_lanczos_quarter.jpg',
+                               'lanczos_quarter/022_lanczos_quarter.jpg',
+                               'lanczos_quarter/023_lanczos_quarter.jpg',
+                               'lanczos_quarter/024_lanczos_quarter.jpg',
+                               'lanczos_quarter/025_lanczos_quarter.jpg']
+# Pixel area relation
+pixel_area_relation_quarter_image_files = ['pixel_area_relation_quarter/001_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/002_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/003_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/004_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/005_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/006_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/007_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/008_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/009_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/010_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/011_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/012_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/013_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/014_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/015_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/016_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/017_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/018_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/019_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/020_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/021_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/022_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/023_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/024_pixel_area_relation_quarter.jpg',
+                                           'pixel_area_relation_quarter/025_pixel_area_relation_quarter.jpg']
+
+################################################
 # Output images
 ################################################
 # Nearest-neighbor (psnr-small)
@@ -369,6 +503,18 @@ def super_resolve_image(input_path, output_path, model_path = 'psnr-small'):
 # main
 if __name__ == "__main__":
 
+    ##########
+    # half image files are not used in RDN
+    # quarter image files will be utilised
+    # full reference image files will take half image files 
+    # to use instead of original image files
+    # this is due to different pixel dimensions
+    # RDN has issues related to process half image files
+    # Debugging:
+    # 1. Script memory allocation [x]
+    # 2. RDN processing limitation (very large pixel dimensions may not lead RDN working) [o]
+    ##########
+
     print("RDN psnr-small part is starting")
 
     # Start time
@@ -378,7 +524,8 @@ if __name__ == "__main__":
     # Load data set and perform super-resolution
     nearest_neighbor_start_time = time.time()
     for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = nearest_neighbor_half_image_files[i]
+        input_file = nearest_neighbor_quarter_image_files[i]
+        # input_file = nearest_neighbor_half_image_files[i]
         output_file = nearest_neighbor_psnr_small_image_files[i]
         super_resolve_image(input_file, output_file)
     nearest_neighbor_end_time = time.time()
@@ -389,7 +536,8 @@ if __name__ == "__main__":
     # Load data set and perform super-resolution
     bilinear_start_time = time.time()
     for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = bilinear_half_image_files[i]
+        input_file = bilinear_quarter_image_files[i]
+        # input_file = bilinear_half_image_files[i]
         output_file = bilinear_psnr_small_image_files[i]
         super_resolve_image(input_file, output_file)
     bilinear_end_time = time.time()
@@ -400,7 +548,8 @@ if __name__ == "__main__":
     # Load data set and perform super-resolution
     bicubic_start_time = time.time()
     for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = bicubic_half_image_files[i]
+        input_file = bicubic_quarter_image_files[i]
+        # input_file = bicubic_half_image_files[i]
         output_file = bicubic_psnr_small_image_files[i]
         super_resolve_image(input_file, output_file)
     bicubic_end_time = time.time()
@@ -411,7 +560,8 @@ if __name__ == "__main__":
     # Load data set and perform super-resolution
     lanczos_start_time = time.time()
     for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = lanczos_half_image_files[i]
+        input_file = lanczos_quarter_image_files[i]
+        # input_file = lanczos_half_image_files[i]
         output_file = lanczos_psnr_small_image_files[i]
         super_resolve_image(input_file, output_file)
     lanczos_end_time = time.time()
@@ -422,7 +572,8 @@ if __name__ == "__main__":
     # Load data set and perform super-resolution
     pixel_area_relation_start_time = time.time()
     for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = pixel_area_relation_half_image_files[i]
+        input_file = pixel_area_relation_quarter_image_files[i]
+        # input_file = pixel_area_relation_half_image_files[i]
         output_file = pixel_area_relation_psnr_small_image_files[i]
         super_resolve_image(input_file, output_file)
     pixel_area_relation_end_time = time.time()
