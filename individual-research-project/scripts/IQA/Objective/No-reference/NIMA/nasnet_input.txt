@@ -1,0 +1,102 @@
+Loading images from directory :  input
+Evaluating :  input/021.jpg
+NIMA Score : 5.278 +- (1.306)
+
+Evaluating :  input/012.jpg
+NIMA Score : 5.220 +- (1.410)
+
+Evaluating :  input/011.jpg
+NIMA Score : 4.900 +- (1.441)
+
+Evaluating :  input/020.jpg
+NIMA Score : 5.129 +- (1.469)
+
+Evaluating :  input/015.jpg
+NIMA Score : 5.260 +- (1.375)
+
+Evaluating :  input/014.jpg
+NIMA Score : 5.150 +- (1.459)
+
+Evaluating :  input/002.jpg
+NIMA Score : 5.264 +- (1.496)
+
+Evaluating :  input/018.jpg
+NIMA Score : 5.677 +- (1.505)
+
+Evaluating :  input/005.jpg
+NIMA Score : 4.439 +- (1.504)
+
+Evaluating :  input/006.jpg
+NIMA Score : 5.250 +- (1.521)
+
+Evaluating :  input/017.jpg
+NIMA Score : 5.693 +- (1.546)
+
+Evaluating :  input/004.jpg
+NIMA Score : 4.648 +- (1.510)
+
+Evaluating :  input/003.jpg
+NIMA Score : 5.130 +- (1.399)
+
+Evaluating :  input/007.jpg
+NIMA Score : 5.465 +- (1.519)
+
+Evaluating :  input/016.jpg
+NIMA Score : 5.738 +- (1.329)
+
+Evaluating :  input/022.jpg
+NIMA Score : 5.236 +- (1.451)
+
+Evaluating :  input/009.jpg
+NIMA Score : 5.881 +- (1.504)
+
+Evaluating :  input/025.jpg
+NIMA Score : 5.949 +- (1.553)
+
+Evaluating :  input/010.jpg
+NIMA Score : 4.968 +- (1.424)
+
+Evaluating :  input/001.jpg
+NIMA Score : 5.326 +- (1.410)
+
+Evaluating :  input/008.jpg
+NIMA Score : 5.701 +- (1.432)
+
+Evaluating :  input/013.jpg
+NIMA Score : 5.443 +- (1.550)
+
+Evaluating :  input/024.jpg
+NIMA Score : 5.865 +- (1.404)
+
+Evaluating :  input/019.jpg
+NIMA Score : 5.536 +- (1.514)
+
+Evaluating :  input/023.jpg
+NIMA Score : 5.158 +- (1.486)
+
+**************************************** Ranking Images ****************************************
+1) 025.jpg : Score = 5.94897
+2) 009.jpg : Score = 5.88139
+3) 024.jpg : Score = 5.86458
+4) 016.jpg : Score = 5.73838
+5) 008.jpg : Score = 5.70115
+6) 017.jpg : Score = 5.69317
+7) 018.jpg : Score = 5.67740
+8) 019.jpg : Score = 5.53611
+9) 007.jpg : Score = 5.46491
+10) 013.jpg : Score = 5.44254
+11) 001.jpg : Score = 5.32645
+12) 021.jpg : Score = 5.27846
+13) 002.jpg : Score = 5.26355
+14) 015.jpg : Score = 5.25994
+15) 006.jpg : Score = 5.24959
+16) 022.jpg : Score = 5.23635
+17) 012.jpg : Score = 5.22039
+18) 023.jpg : Score = 5.15755
+19) 014.jpg : Score = 5.15003
+20) 003.jpg : Score = 5.13021
+21) 020.jpg : Score = 5.12882
+22) 010.jpg : Score = 4.96822
+23) 011.jpg : Score = 4.90023
+24) 004.jpg : Score = 4.64797
+25) 005.jpg : Score = 4.43923

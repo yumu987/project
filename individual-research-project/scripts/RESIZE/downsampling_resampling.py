@@ -61,6 +61,8 @@
 # "pixel_area_relation_quarter"
 ################################################
 
+# python downsampling_resampling.py
+
 ################################################
 # Downsampling + Resampling
 import cv2

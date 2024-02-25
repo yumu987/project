@@ -1,0 +1,102 @@
+Loading images from directory :  bilinear_gans
+Evaluating :  bilinear_gans/023_bilinear_gans.jpg
+NIMA Score : 4.675 +- (1.529)
+
+Evaluating :  bilinear_gans/017_bilinear_gans.jpg
+NIMA Score : 5.481 +- (1.561)
+
+Evaluating :  bilinear_gans/009_bilinear_gans.jpg
+NIMA Score : 5.940 +- (1.572)
+
+Evaluating :  bilinear_gans/004_bilinear_gans.jpg
+NIMA Score : 4.529 +- (1.501)
+
+Evaluating :  bilinear_gans/022_bilinear_gans.jpg
+NIMA Score : 4.823 +- (1.471)
+
+Evaluating :  bilinear_gans/010_bilinear_gans.jpg
+NIMA Score : 4.649 +- (1.481)
+
+Evaluating :  bilinear_gans/016_bilinear_gans.jpg
+NIMA Score : 5.531 +- (1.368)
+
+Evaluating :  bilinear_gans/013_bilinear_gans.jpg
+NIMA Score : 5.053 +- (1.561)
+
+Evaluating :  bilinear_gans/003_bilinear_gans.jpg
+NIMA Score : 4.826 +- (1.412)
+
+Evaluating :  bilinear_gans/001_bilinear_gans.jpg
+NIMA Score : 5.012 +- (1.464)
+
+Evaluating :  bilinear_gans/015_bilinear_gans.jpg
+NIMA Score : 4.930 +- (1.433)
+
+Evaluating :  bilinear_gans/019_bilinear_gans.jpg
+NIMA Score : 5.525 +- (1.545)
+
+Evaluating :  bilinear_gans/011_bilinear_gans.jpg
+NIMA Score : 4.189 +- (1.379)
+
+Evaluating :  bilinear_gans/006_bilinear_gans.jpg
+NIMA Score : 5.094 +- (1.501)
+
+Evaluating :  bilinear_gans/008_bilinear_gans.jpg
+NIMA Score : 5.097 +- (1.518)
+
+Evaluating :  bilinear_gans/025_bilinear_gans.jpg
+NIMA Score : 5.820 +- (1.585)
+
+Evaluating :  bilinear_gans/012_bilinear_gans.jpg
+NIMA Score : 4.996 +- (1.421)
+
+Evaluating :  bilinear_gans/002_bilinear_gans.jpg
+NIMA Score : 4.858 +- (1.519)
+
+Evaluating :  bilinear_gans/014_bilinear_gans.jpg
+NIMA Score : 5.032 +- (1.463)
+
+Evaluating :  bilinear_gans/018_bilinear_gans.jpg
+NIMA Score : 5.581 +- (1.516)
+
+Evaluating :  bilinear_gans/005_bilinear_gans.jpg
+NIMA Score : 4.203 +- (1.499)
+
+Evaluating :  bilinear_gans/021_bilinear_gans.jpg
+NIMA Score : 5.218 +- (1.315)
+
+Evaluating :  bilinear_gans/007_bilinear_gans.jpg
+NIMA Score : 5.339 +- (1.585)
+
+Evaluating :  bilinear_gans/024_bilinear_gans.jpg
+NIMA Score : 5.827 +- (1.414)
+
+Evaluating :  bilinear_gans/020_bilinear_gans.jpg
+NIMA Score : 5.269 +- (1.498)
+
+**************************************** Ranking Images ****************************************
+1) 009_bilinear_gans.jpg : Score = 5.93996
+2) 024_bilinear_gans.jpg : Score = 5.82669
+3) 025_bilinear_gans.jpg : Score = 5.81991
+4) 018_bilinear_gans.jpg : Score = 5.58137
+5) 016_bilinear_gans.jpg : Score = 5.53102
+6) 019_bilinear_gans.jpg : Score = 5.52526
+7) 017_bilinear_gans.jpg : Score = 5.48072
+8) 007_bilinear_gans.jpg : Score = 5.33893
+9) 020_bilinear_gans.jpg : Score = 5.26877
+10) 021_bilinear_gans.jpg : Score = 5.21762
+11) 008_bilinear_gans.jpg : Score = 5.09696
+12) 006_bilinear_gans.jpg : Score = 5.09417
+13) 013_bilinear_gans.jpg : Score = 5.05256
+14) 014_bilinear_gans.jpg : Score = 5.03159
+15) 001_bilinear_gans.jpg : Score = 5.01213
+16) 012_bilinear_gans.jpg : Score = 4.99597
+17) 015_bilinear_gans.jpg : Score = 4.92997
+18) 002_bilinear_gans.jpg : Score = 4.85810
+19) 003_bilinear_gans.jpg : Score = 4.82576
+20) 022_bilinear_gans.jpg : Score = 4.82268
+21) 023_bilinear_gans.jpg : Score = 4.67512
+22) 010_bilinear_gans.jpg : Score = 4.64862
+23) 004_bilinear_gans.jpg : Score = 4.52856
+24) 005_bilinear_gans.jpg : Score = 4.20334
+25) 011_bilinear_gans.jpg : Score = 4.18857

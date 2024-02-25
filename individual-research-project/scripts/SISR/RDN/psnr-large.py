@@ -77,6 +77,10 @@ from pandas.plotting import table
 import numpy as np
 ################################################
 
+import tensorflow as tf
+import gc
+import atexit
+
 ################################################
 # Input images
 ################################################
@@ -479,6 +483,10 @@ pixel_area_relation_psnr_large_image_files = [   'pixel_area_relation_psnr_large
                                            'pixel_area_relation_psnr_large/024_pixel_area_relation_psnr_large.jpg',
                                            'pixel_area_relation_psnr_large/025_pixel_area_relation_psnr_large.jpg']
 
+def cleanup():
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+
 # super_resolve_image function
 def super_resolve_image(input_path, output_path, model_path = 'psnr-large'):
     try:
@@ -493,6 +501,9 @@ def super_resolve_image(input_path, output_path, model_path = 'psnr-large'):
         sr_img = model.predict(img)
         # Save the output image
         cv2.imwrite(output_path, sr_img)
+        # Release resources
+        del img
+        del sr_img
     except FileNotFoundError as e:
         # Handle file not found exception
         print(f"File not found: {e}")
@@ -502,6 +513,17 @@ def super_resolve_image(input_path, output_path, model_path = 'psnr-large'):
 
 # main
 if __name__ == "__main__":
+
+    atexit.register(cleanup)
+
+    gpus = tf.config.experimental.list_physical_devices('GPU')
+    if gpus:
+        try:
+            # Currently, memory growth needs to be the same across GPUs
+            for gpu in gpus:
+                tf.config.experimental.set_memory_growth(gpu, True)
+        except RuntimeError as e:
+            print(e)
 
     ##########
     # half image files are not used in RDN
@@ -531,6 +553,11 @@ if __name__ == "__main__":
     nearest_neighbor_end_time = time.time()
     nearest_neighbor_elapsed_time = nearest_neighbor_end_time - nearest_neighbor_start_time
     nearest_neighbor_average_time = nearest_neighbor_elapsed_time/25
+    # Release resources after processing each batch
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+    # Trigger garbage collection
+    gc.collect()
 
     # Bilinear
     # Load data set and perform super-resolution
@@ -543,6 +570,11 @@ if __name__ == "__main__":
     bilinear_end_time = time.time()
     bilinear_elapsed_time = bilinear_end_time - bilinear_start_time
     bilinear_average_time = bilinear_elapsed_time/25
+    # Release resources after processing each batch
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+    # Trigger garbage collection
+    gc.collect()
 
     # Bicubic
     # Load data set and perform super-resolution
@@ -555,6 +587,11 @@ if __name__ == "__main__":
     bicubic_end_time = time.time()
     bicubic_elapsed_time = bicubic_end_time - bicubic_start_time
     bicubic_average_time = bicubic_elapsed_time/25
+    # Release resources after processing each batch
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+    # Trigger garbage collection
+    gc.collect()
 
     # Lanczos
     # Load data set and perform super-resolution
@@ -567,6 +604,11 @@ if __name__ == "__main__":
     lanczos_end_time = time.time()
     lanczos_elapsed_time = lanczos_end_time - lanczos_start_time
     lanczos_average_time = lanczos_elapsed_time/25
+    # Release resources after processing each batch
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+    # Trigger garbage collection
+    gc.collect()
 
     # Pixel area relation
     # Load data set and perform super-resolution
@@ -579,6 +621,11 @@ if __name__ == "__main__":
     pixel_area_relation_end_time = time.time()
     pixel_area_relation_elapsed_time = pixel_area_relation_end_time - pixel_area_relation_start_time
     pixel_area_relation_average_time = pixel_area_relation_elapsed_time/25
+    # Release resources after processing each batch
+    cv2.destroyAllWindows()
+    tf.keras.backend.clear_session()
+    # Trigger garbage collection
+    gc.collect()
 
     # End time
     end_time = time.time()

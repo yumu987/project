@@ -1,0 +1,102 @@
+Loading images from directory :  lanczos_gans
+Evaluating :  lanczos_gans/002_lanczos_gans.jpg
+NIMA Score : 4.842 +- (1.530)
+
+Evaluating :  lanczos_gans/004_lanczos_gans.jpg
+NIMA Score : 4.511 +- (1.508)
+
+Evaluating :  lanczos_gans/005_lanczos_gans.jpg
+NIMA Score : 4.332 +- (1.490)
+
+Evaluating :  lanczos_gans/009_lanczos_gans.jpg
+NIMA Score : 5.945 +- (1.584)
+
+Evaluating :  lanczos_gans/006_lanczos_gans.jpg
+NIMA Score : 5.320 +- (1.480)
+
+Evaluating :  lanczos_gans/017_lanczos_gans.jpg
+NIMA Score : 5.448 +- (1.575)
+
+Evaluating :  lanczos_gans/010_lanczos_gans.jpg
+NIMA Score : 4.465 +- (1.480)
+
+Evaluating :  lanczos_gans/013_lanczos_gans.jpg
+NIMA Score : 5.001 +- (1.550)
+
+Evaluating :  lanczos_gans/020_lanczos_gans.jpg
+NIMA Score : 5.364 +- (1.518)
+
+Evaluating :  lanczos_gans/008_lanczos_gans.jpg
+NIMA Score : 5.143 +- (1.560)
+
+Evaluating :  lanczos_gans/011_lanczos_gans.jpg
+NIMA Score : 4.172 +- (1.378)
+
+Evaluating :  lanczos_gans/014_lanczos_gans.jpg
+NIMA Score : 5.017 +- (1.460)
+
+Evaluating :  lanczos_gans/007_lanczos_gans.jpg
+NIMA Score : 5.205 +- (1.563)
+
+Evaluating :  lanczos_gans/023_lanczos_gans.jpg
+NIMA Score : 4.747 +- (1.529)
+
+Evaluating :  lanczos_gans/024_lanczos_gans.jpg
+NIMA Score : 5.798 +- (1.412)
+
+Evaluating :  lanczos_gans/022_lanczos_gans.jpg
+NIMA Score : 4.672 +- (1.448)
+
+Evaluating :  lanczos_gans/003_lanczos_gans.jpg
+NIMA Score : 4.856 +- (1.437)
+
+Evaluating :  lanczos_gans/016_lanczos_gans.jpg
+NIMA Score : 5.541 +- (1.383)
+
+Evaluating :  lanczos_gans/015_lanczos_gans.jpg
+NIMA Score : 4.898 +- (1.443)
+
+Evaluating :  lanczos_gans/018_lanczos_gans.jpg
+NIMA Score : 5.552 +- (1.506)
+
+Evaluating :  lanczos_gans/021_lanczos_gans.jpg
+NIMA Score : 5.195 +- (1.319)
+
+Evaluating :  lanczos_gans/019_lanczos_gans.jpg
+NIMA Score : 5.488 +- (1.543)
+
+Evaluating :  lanczos_gans/012_lanczos_gans.jpg
+NIMA Score : 4.949 +- (1.422)
+
+Evaluating :  lanczos_gans/025_lanczos_gans.jpg
+NIMA Score : 5.835 +- (1.587)
+
+Evaluating :  lanczos_gans/001_lanczos_gans.jpg
+NIMA Score : 4.936 +- (1.478)
+
+**************************************** Ranking Images ****************************************
+1) 009_lanczos_gans.jpg : Score = 5.94464
+2) 025_lanczos_gans.jpg : Score = 5.83456
+3) 024_lanczos_gans.jpg : Score = 5.79776
+4) 018_lanczos_gans.jpg : Score = 5.55219
+5) 016_lanczos_gans.jpg : Score = 5.54072
+6) 019_lanczos_gans.jpg : Score = 5.48794
+7) 017_lanczos_gans.jpg : Score = 5.44811
+8) 020_lanczos_gans.jpg : Score = 5.36409
+9) 006_lanczos_gans.jpg : Score = 5.32037
+10) 007_lanczos_gans.jpg : Score = 5.20530
+11) 021_lanczos_gans.jpg : Score = 5.19494
+12) 008_lanczos_gans.jpg : Score = 5.14297
+13) 014_lanczos_gans.jpg : Score = 5.01716
+14) 013_lanczos_gans.jpg : Score = 5.00141
+15) 012_lanczos_gans.jpg : Score = 4.94881
+16) 001_lanczos_gans.jpg : Score = 4.93597
+17) 015_lanczos_gans.jpg : Score = 4.89811
+18) 003_lanczos_gans.jpg : Score = 4.85595
+19) 002_lanczos_gans.jpg : Score = 4.84217
+20) 023_lanczos_gans.jpg : Score = 4.74674
+21) 022_lanczos_gans.jpg : Score = 4.67196
+22) 004_lanczos_gans.jpg : Score = 4.51052
+23) 010_lanczos_gans.jpg : Score = 4.46507
+24) 005_lanczos_gans.jpg : Score = 4.33236
+25) 011_lanczos_gans.jpg : Score = 4.17248

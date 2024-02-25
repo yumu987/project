@@ -1,0 +1,102 @@
+Loading images from directory :  nearest_neighbor_gans
+Evaluating :  nearest_neighbor_gans/020_nearest_neighbor_gans.jpg
+NIMA Score : 5.262 +- (1.521)
+
+Evaluating :  nearest_neighbor_gans/024_nearest_neighbor_gans.jpg
+NIMA Score : 5.821 +- (1.429)
+
+Evaluating :  nearest_neighbor_gans/006_nearest_neighbor_gans.jpg
+NIMA Score : 5.220 +- (1.510)
+
+Evaluating :  nearest_neighbor_gans/007_nearest_neighbor_gans.jpg
+NIMA Score : 5.316 +- (1.553)
+
+Evaluating :  nearest_neighbor_gans/012_nearest_neighbor_gans.jpg
+NIMA Score : 4.961 +- (1.448)
+
+Evaluating :  nearest_neighbor_gans/002_nearest_neighbor_gans.jpg
+NIMA Score : 4.838 +- (1.508)
+
+Evaluating :  nearest_neighbor_gans/022_nearest_neighbor_gans.jpg
+NIMA Score : 4.794 +- (1.475)
+
+Evaluating :  nearest_neighbor_gans/018_nearest_neighbor_gans.jpg
+NIMA Score : 5.371 +- (1.491)
+
+Evaluating :  nearest_neighbor_gans/019_nearest_neighbor_gans.jpg
+NIMA Score : 5.603 +- (1.583)
+
+Evaluating :  nearest_neighbor_gans/001_nearest_neighbor_gans.jpg
+NIMA Score : 4.896 +- (1.488)
+
+Evaluating :  nearest_neighbor_gans/008_nearest_neighbor_gans.jpg
+NIMA Score : 5.167 +- (1.537)
+
+Evaluating :  nearest_neighbor_gans/003_nearest_neighbor_gans.jpg
+NIMA Score : 4.721 +- (1.447)
+
+Evaluating :  nearest_neighbor_gans/023_nearest_neighbor_gans.jpg
+NIMA Score : 4.531 +- (1.506)
+
+Evaluating :  nearest_neighbor_gans/011_nearest_neighbor_gans.jpg
+NIMA Score : 4.160 +- (1.423)
+
+Evaluating :  nearest_neighbor_gans/017_nearest_neighbor_gans.jpg
+NIMA Score : 5.493 +- (1.581)
+
+Evaluating :  nearest_neighbor_gans/004_nearest_neighbor_gans.jpg
+NIMA Score : 4.469 +- (1.521)
+
+Evaluating :  nearest_neighbor_gans/025_nearest_neighbor_gans.jpg
+NIMA Score : 5.725 +- (1.564)
+
+Evaluating :  nearest_neighbor_gans/016_nearest_neighbor_gans.jpg
+NIMA Score : 5.480 +- (1.376)
+
+Evaluating :  nearest_neighbor_gans/009_nearest_neighbor_gans.jpg
+NIMA Score : 6.059 +- (1.579)
+
+Evaluating :  nearest_neighbor_gans/021_nearest_neighbor_gans.jpg
+NIMA Score : 5.049 +- (1.345)
+
+Evaluating :  nearest_neighbor_gans/005_nearest_neighbor_gans.jpg
+NIMA Score : 4.391 +- (1.475)
+
+Evaluating :  nearest_neighbor_gans/015_nearest_neighbor_gans.jpg
+NIMA Score : 5.012 +- (1.489)
+
+Evaluating :  nearest_neighbor_gans/014_nearest_neighbor_gans.jpg
+NIMA Score : 5.022 +- (1.499)
+
+Evaluating :  nearest_neighbor_gans/010_nearest_neighbor_gans.jpg
+NIMA Score : 4.411 +- (1.492)
+
+Evaluating :  nearest_neighbor_gans/013_nearest_neighbor_gans.jpg
+NIMA Score : 5.082 +- (1.573)
+
+**************************************** Ranking Images ****************************************
+1) 009_nearest_neighbor_gans.jpg : Score = 6.05907
+2) 024_nearest_neighbor_gans.jpg : Score = 5.82100
+3) 025_nearest_neighbor_gans.jpg : Score = 5.72512
+4) 019_nearest_neighbor_gans.jpg : Score = 5.60263
+5) 017_nearest_neighbor_gans.jpg : Score = 5.49294
+6) 016_nearest_neighbor_gans.jpg : Score = 5.48008
+7) 018_nearest_neighbor_gans.jpg : Score = 5.37094
+8) 007_nearest_neighbor_gans.jpg : Score = 5.31582
+9) 020_nearest_neighbor_gans.jpg : Score = 5.26156
+10) 006_nearest_neighbor_gans.jpg : Score = 5.22050
+11) 008_nearest_neighbor_gans.jpg : Score = 5.16699
+12) 013_nearest_neighbor_gans.jpg : Score = 5.08240
+13) 021_nearest_neighbor_gans.jpg : Score = 5.04866
+14) 014_nearest_neighbor_gans.jpg : Score = 5.02159
+15) 015_nearest_neighbor_gans.jpg : Score = 5.01167
+16) 012_nearest_neighbor_gans.jpg : Score = 4.96141
+17) 001_nearest_neighbor_gans.jpg : Score = 4.89638
+18) 002_nearest_neighbor_gans.jpg : Score = 4.83830
+19) 022_nearest_neighbor_gans.jpg : Score = 4.79359
+20) 003_nearest_neighbor_gans.jpg : Score = 4.72117
+21) 023_nearest_neighbor_gans.jpg : Score = 4.53085
+22) 004_nearest_neighbor_gans.jpg : Score = 4.46936
+23) 010_nearest_neighbor_gans.jpg : Score = 4.41079
+24) 005_nearest_neighbor_gans.jpg : Score = 4.39061
+25) 011_nearest_neighbor_gans.jpg : Score = 4.16031

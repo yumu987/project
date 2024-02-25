@@ -1,0 +1,465 @@
+--------------------------------------------------
+Nearest-neighbor
+--------------------------------------------------
+##############################
+Not equal at nearest_neighbor_gans/001_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/002_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/003_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at nearest_neighbor_gans/004_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/005_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/006_nearest_neighbor_gans.jpg
+##############################
+##############################
+Not equal at nearest_neighbor_gans/007_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/008_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/009_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/010_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/011_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/012_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/013_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/014_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at nearest_neighbor_gans/015_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/016_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/017_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/018_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/019_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/020_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/021_nearest_neighbor_gans.jpg
+##############################
+##############################
+Not equal at nearest_neighbor_gans/022_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at nearest_neighbor_gans/023_nearest_neighbor_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at nearest_neighbor_gans/024_nearest_neighbor_gans.jpg
+##############################
+##############################
+Equal at nearest_neighbor_gans/025_nearest_neighbor_gans.jpg
+##############################
+--------------------------------------------------
+
+--------------------------------------------------
+Bilinear
+--------------------------------------------------
+##############################
+Not equal at bilinear_gans/001_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/002_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/003_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bilinear_gans/004_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/005_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/006_bilinear_gans.jpg
+##############################
+##############################
+Not equal at bilinear_gans/007_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/008_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/009_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/010_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/011_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/012_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/013_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/014_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bilinear_gans/015_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/016_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/017_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/018_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/019_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/020_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/021_bilinear_gans.jpg
+##############################
+##############################
+Not equal at bilinear_gans/022_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bilinear_gans/023_bilinear_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bilinear_gans/024_bilinear_gans.jpg
+##############################
+##############################
+Equal at bilinear_gans/025_bilinear_gans.jpg
+##############################
+--------------------------------------------------
+
+--------------------------------------------------
+Bicubic
+--------------------------------------------------
+##############################
+Not equal at bicubic_gans/001_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/002_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/003_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bicubic_gans/004_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/005_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/006_bicubic_gans.jpg
+##############################
+##############################
+Not equal at bicubic_gans/007_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/008_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/009_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/010_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/011_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/012_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/013_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/014_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bicubic_gans/015_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/016_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/017_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/018_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/019_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/020_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/021_bicubic_gans.jpg
+##############################
+##############################
+Not equal at bicubic_gans/022_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at bicubic_gans/023_bicubic_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at bicubic_gans/024_bicubic_gans.jpg
+##############################
+##############################
+Equal at bicubic_gans/025_bicubic_gans.jpg
+##############################
+--------------------------------------------------
+
+--------------------------------------------------
+Lanczos
+--------------------------------------------------
+##############################
+Not equal at lanczos_gans/001_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/002_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/003_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at lanczos_gans/004_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/005_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/006_lanczos_gans.jpg
+##############################
+##############################
+Not equal at lanczos_gans/007_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/008_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/009_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/010_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/011_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/012_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/013_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/014_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at lanczos_gans/015_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/016_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/017_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/018_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/019_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/020_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/021_lanczos_gans.jpg
+##############################
+##############################
+Not equal at lanczos_gans/022_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at lanczos_gans/023_lanczos_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at lanczos_gans/024_lanczos_gans.jpg
+##############################
+##############################
+Equal at lanczos_gans/025_lanczos_gans.jpg
+##############################
+--------------------------------------------------
+
+--------------------------------------------------
+Pixel area relation
+--------------------------------------------------
+##############################
+Not equal at pixel_area_relation_gans/001_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/002_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/003_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at pixel_area_relation_gans/004_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/005_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/006_pixel_area_relation_gans.jpg
+##############################
+##############################
+Not equal at pixel_area_relation_gans/007_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/008_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/009_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/010_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/011_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/012_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/013_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/014_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at pixel_area_relation_gans/015_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/016_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/017_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/018_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/019_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/020_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/021_pixel_area_relation_gans.jpg
+##############################
+##############################
+Not equal at pixel_area_relation_gans/022_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Not equal at pixel_area_relation_gans/023_pixel_area_relation_gans.jpg
+Bilinear interpolation will be used for upsampling (resizing)
+##############################
+##############################
+Equal at pixel_area_relation_gans/024_pixel_area_relation_gans.jpg
+##############################
+##############################
+Equal at pixel_area_relation_gans/025_pixel_area_relation_gans.jpg
+##############################
+--------------------------------------------------
+

@@ -1,0 +1,102 @@
+Loading images from directory :  bicubic_gans
+Evaluating :  bicubic_gans/022_bicubic_gans.jpg
+NIMA Score : 4.649 +- (1.453)
+
+Evaluating :  bicubic_gans/004_bicubic_gans.jpg
+NIMA Score : 4.475 +- (1.509)
+
+Evaluating :  bicubic_gans/024_bicubic_gans.jpg
+NIMA Score : 5.787 +- (1.412)
+
+Evaluating :  bicubic_gans/008_bicubic_gans.jpg
+NIMA Score : 5.192 +- (1.541)
+
+Evaluating :  bicubic_gans/011_bicubic_gans.jpg
+NIMA Score : 4.220 +- (1.374)
+
+Evaluating :  bicubic_gans/023_bicubic_gans.jpg
+NIMA Score : 4.709 +- (1.515)
+
+Evaluating :  bicubic_gans/016_bicubic_gans.jpg
+NIMA Score : 5.506 +- (1.375)
+
+Evaluating :  bicubic_gans/015_bicubic_gans.jpg
+NIMA Score : 4.954 +- (1.435)
+
+Evaluating :  bicubic_gans/019_bicubic_gans.jpg
+NIMA Score : 5.520 +- (1.546)
+
+Evaluating :  bicubic_gans/021_bicubic_gans.jpg
+NIMA Score : 5.152 +- (1.321)
+
+Evaluating :  bicubic_gans/012_bicubic_gans.jpg
+NIMA Score : 5.045 +- (1.435)
+
+Evaluating :  bicubic_gans/025_bicubic_gans.jpg
+NIMA Score : 5.820 +- (1.588)
+
+Evaluating :  bicubic_gans/010_bicubic_gans.jpg
+NIMA Score : 4.473 +- (1.477)
+
+Evaluating :  bicubic_gans/005_bicubic_gans.jpg
+NIMA Score : 4.285 +- (1.485)
+
+Evaluating :  bicubic_gans/020_bicubic_gans.jpg
+NIMA Score : 5.361 +- (1.512)
+
+Evaluating :  bicubic_gans/001_bicubic_gans.jpg
+NIMA Score : 4.829 +- (1.466)
+
+Evaluating :  bicubic_gans/003_bicubic_gans.jpg
+NIMA Score : 4.747 +- (1.415)
+
+Evaluating :  bicubic_gans/009_bicubic_gans.jpg
+NIMA Score : 6.010 +- (1.583)
+
+Evaluating :  bicubic_gans/007_bicubic_gans.jpg
+NIMA Score : 5.352 +- (1.588)
+
+Evaluating :  bicubic_gans/006_bicubic_gans.jpg
+NIMA Score : 5.254 +- (1.469)
+
+Evaluating :  bicubic_gans/002_bicubic_gans.jpg
+NIMA Score : 4.850 +- (1.512)
+
+Evaluating :  bicubic_gans/017_bicubic_gans.jpg
+NIMA Score : 5.433 +- (1.561)
+
+Evaluating :  bicubic_gans/018_bicubic_gans.jpg
+NIMA Score : 5.544 +- (1.518)
+
+Evaluating :  bicubic_gans/013_bicubic_gans.jpg
+NIMA Score : 4.951 +- (1.550)
+
+Evaluating :  bicubic_gans/014_bicubic_gans.jpg
+NIMA Score : 5.019 +- (1.466)
+
+**************************************** Ranking Images ****************************************
+1) 009_bicubic_gans.jpg : Score = 6.00954
+2) 025_bicubic_gans.jpg : Score = 5.82039
+3) 024_bicubic_gans.jpg : Score = 5.78718
+4) 018_bicubic_gans.jpg : Score = 5.54448
+5) 019_bicubic_gans.jpg : Score = 5.52049
+6) 016_bicubic_gans.jpg : Score = 5.50602
+7) 017_bicubic_gans.jpg : Score = 5.43345
+8) 020_bicubic_gans.jpg : Score = 5.36068
+9) 007_bicubic_gans.jpg : Score = 5.35186
+10) 006_bicubic_gans.jpg : Score = 5.25425
+11) 008_bicubic_gans.jpg : Score = 5.19225
+12) 021_bicubic_gans.jpg : Score = 5.15233
+13) 012_bicubic_gans.jpg : Score = 5.04459
+14) 014_bicubic_gans.jpg : Score = 5.01932
+15) 015_bicubic_gans.jpg : Score = 4.95426
+16) 013_bicubic_gans.jpg : Score = 4.95116
+17) 002_bicubic_gans.jpg : Score = 4.84985
+18) 001_bicubic_gans.jpg : Score = 4.82909
+19) 003_bicubic_gans.jpg : Score = 4.74730
+20) 023_bicubic_gans.jpg : Score = 4.70949
+21) 022_bicubic_gans.jpg : Score = 4.64879
+22) 004_bicubic_gans.jpg : Score = 4.47540
+23) 010_bicubic_gans.jpg : Score = 4.47321
+24) 005_bicubic_gans.jpg : Score = 4.28488
+25) 011_bicubic_gans.jpg : Score = 4.22047

@@ -1,0 +1,102 @@
+Loading images from directory :  pixel_area_relation_gans
+Evaluating :  pixel_area_relation_gans/021_pixel_area_relation_gans.jpg
+NIMA Score : 5.270 +- (1.287)
+
+Evaluating :  pixel_area_relation_gans/022_pixel_area_relation_gans.jpg
+NIMA Score : 5.102 +- (1.449)
+
+Evaluating :  pixel_area_relation_gans/024_pixel_area_relation_gans.jpg
+NIMA Score : 5.837 +- (1.408)
+
+Evaluating :  pixel_area_relation_gans/017_pixel_area_relation_gans.jpg
+NIMA Score : 5.467 +- (1.548)
+
+Evaluating :  pixel_area_relation_gans/001_pixel_area_relation_gans.jpg
+NIMA Score : 5.474 +- (1.398)
+
+Evaluating :  pixel_area_relation_gans/023_pixel_area_relation_gans.jpg
+NIMA Score : 5.294 +- (1.468)
+
+Evaluating :  pixel_area_relation_gans/015_pixel_area_relation_gans.jpg
+NIMA Score : 5.319 +- (1.390)
+
+Evaluating :  pixel_area_relation_gans/019_pixel_area_relation_gans.jpg
+NIMA Score : 5.525 +- (1.516)
+
+Evaluating :  pixel_area_relation_gans/016_pixel_area_relation_gans.jpg
+NIMA Score : 5.634 +- (1.367)
+
+Evaluating :  pixel_area_relation_gans/014_pixel_area_relation_gans.jpg
+NIMA Score : 5.228 +- (1.464)
+
+Evaluating :  pixel_area_relation_gans/004_pixel_area_relation_gans.jpg
+NIMA Score : 4.642 +- (1.516)
+
+Evaluating :  pixel_area_relation_gans/010_pixel_area_relation_gans.jpg
+NIMA Score : 5.269 +- (1.455)
+
+Evaluating :  pixel_area_relation_gans/002_pixel_area_relation_gans.jpg
+NIMA Score : 5.062 +- (1.510)
+
+Evaluating :  pixel_area_relation_gans/018_pixel_area_relation_gans.jpg
+NIMA Score : 5.570 +- (1.509)
+
+Evaluating :  pixel_area_relation_gans/012_pixel_area_relation_gans.jpg
+NIMA Score : 5.282 +- (1.409)
+
+Evaluating :  pixel_area_relation_gans/007_pixel_area_relation_gans.jpg
+NIMA Score : 5.475 +- (1.521)
+
+Evaluating :  pixel_area_relation_gans/020_pixel_area_relation_gans.jpg
+NIMA Score : 5.221 +- (1.473)
+
+Evaluating :  pixel_area_relation_gans/006_pixel_area_relation_gans.jpg
+NIMA Score : 5.180 +- (1.512)
+
+Evaluating :  pixel_area_relation_gans/013_pixel_area_relation_gans.jpg
+NIMA Score : 5.505 +- (1.516)
+
+Evaluating :  pixel_area_relation_gans/003_pixel_area_relation_gans.jpg
+NIMA Score : 5.059 +- (1.397)
+
+Evaluating :  pixel_area_relation_gans/025_pixel_area_relation_gans.jpg
+NIMA Score : 5.852 +- (1.562)
+
+Evaluating :  pixel_area_relation_gans/011_pixel_area_relation_gans.jpg
+NIMA Score : 4.771 +- (1.416)
+
+Evaluating :  pixel_area_relation_gans/005_pixel_area_relation_gans.jpg
+NIMA Score : 4.108 +- (1.508)
+
+Evaluating :  pixel_area_relation_gans/009_pixel_area_relation_gans.jpg
+NIMA Score : 5.927 +- (1.523)
+
+Evaluating :  pixel_area_relation_gans/008_pixel_area_relation_gans.jpg
+NIMA Score : 5.388 +- (1.413)
+
+**************************************** Ranking Images ****************************************
+1) 009_pixel_area_relation_gans.jpg : Score = 5.92657
+2) 025_pixel_area_relation_gans.jpg : Score = 5.85245
+3) 024_pixel_area_relation_gans.jpg : Score = 5.83655
+4) 016_pixel_area_relation_gans.jpg : Score = 5.63415
+5) 018_pixel_area_relation_gans.jpg : Score = 5.57040
+6) 019_pixel_area_relation_gans.jpg : Score = 5.52512
+7) 013_pixel_area_relation_gans.jpg : Score = 5.50536
+8) 007_pixel_area_relation_gans.jpg : Score = 5.47501
+9) 001_pixel_area_relation_gans.jpg : Score = 5.47379
+10) 017_pixel_area_relation_gans.jpg : Score = 5.46652
+11) 008_pixel_area_relation_gans.jpg : Score = 5.38836
+12) 015_pixel_area_relation_gans.jpg : Score = 5.31872
+13) 023_pixel_area_relation_gans.jpg : Score = 5.29383
+14) 012_pixel_area_relation_gans.jpg : Score = 5.28195
+15) 021_pixel_area_relation_gans.jpg : Score = 5.26984
+16) 010_pixel_area_relation_gans.jpg : Score = 5.26907
+17) 014_pixel_area_relation_gans.jpg : Score = 5.22827
+18) 020_pixel_area_relation_gans.jpg : Score = 5.22138
+19) 006_pixel_area_relation_gans.jpg : Score = 5.18048
+20) 022_pixel_area_relation_gans.jpg : Score = 5.10203
+21) 002_pixel_area_relation_gans.jpg : Score = 5.06178
+22) 003_pixel_area_relation_gans.jpg : Score = 5.05925
+23) 011_pixel_area_relation_gans.jpg : Score = 4.77116
+24) 004_pixel_area_relation_gans.jpg : Score = 4.64170
+25) 005_pixel_area_relation_gans.jpg : Score = 4.10807
