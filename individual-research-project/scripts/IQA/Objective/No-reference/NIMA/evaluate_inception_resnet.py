@@ -1,3 +1,39 @@
+################################################
+# inception_resnet
+################################################
+
+################################################
+# Dataset from Nick Yue
+# Special thanks to nick :)
+# Pre-processing images produced by Yumu Xie
+################################################
+
+################################################
+#
+# EENG30009 Individual Research Project 3
+# TOPIC: Single-image Super-resolution
+#
+# Author: titu1994
+# https://github.com/titu1994
+# https://github.com/titu1994/neural-image-assessment
+# https://github.com/titu1994/neural-image-assessment/blob/master/evaluate_inception_resnet.py
+# Modified by Yumu Xie
+# University of Bristol
+#
+################################################
+
+##############################################
+# Programming environment: WSL Linux subsystem of Windows
+# Python version: 3.7.9
+# Python setup is based on 'pyenv' (Simple Python version management)
+# https://github.com/pyenv/pyenv
+################################################
+
+##############################################
+# Alert: "inception_resnet" model is not working with RRDN GANs Super-resolution model
+# There will be no ranking used here
+##############################################
+
 import numpy as np
 import argparse
 from path import Path

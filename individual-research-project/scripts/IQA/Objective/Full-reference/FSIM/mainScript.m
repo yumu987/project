@@ -27,7 +27,8 @@ clear;
 % Clear all commands in command space
 clc;
 
-disp('Script executing');
+% Indication of script executing
+disp('FeatureSIM is executing');
 
 % Nearest-neighbor
 global nearest_neighbor_fsim_array;
@@ -584,24 +585,57 @@ bar(FSIM_values);
 title('Average FSIM in 25 images');
 xlabel('Downsampling (Distortion)');
 ylabel('Feature Similarity Index');
+% Turn grid on
 grid on;
 xticks(1:length(downsampling_categories));
 xticklabels(downsampling_categories);
+% Save diagram
 saveas(gcf, 'FSIM_bar_chart.png');
 % FSIMc bar chart
 bar(FSIMc_values);
-% Add title and axis labels
+% Add labels and title
 title('Average FSIMc in 25 images');
 xlabel('Downsampling (Distortion)');
 ylabel('Feature Similarity Index Extension');
+% Turn grid on
 grid on;
 xticks(1:length(downsampling_categories));
 xticklabels(downsampling_categories);
+% Save diagram
 saveas(gcf, 'FSIMc_bar_chart.png');
+%-----------------------------------------------------------------------
+
+%-----------------------------------------------------------------------
+% Plot comparison bar chart of FSIM and FSIMc
+%-----------------------------------------------------------------------
+% Define positions for bars
+x = 1:numel(FSIM_values); % Positions for the first set of bars
+x_shifted = x + 0.3; % Shifted positions for the second set of bars
+% Create figure
+figure;
+% Plot first FSIM bar chart
+bar(x, FSIM_values, 0.3, 'blue');
+% Hold the plot to add the second set of bars
+hold on;
+% Plot second FSIMc bar chart
+bar(x_shifted, FSIMc_values, 0.3, 'red');
+% Add labels, title, and legend
+xlabel('Downsampling (Distortion)');
+ylabel('FSIM & FSIMc');
+title('Average FSIM & FSIMc in 25 images');
+legend('FSIM', 'FSIMc');
+xticks(1:length(downsampling_categories));
+xticklabels(downsampling_categories);
+% Turn grid on
+grid on;
+% Turn hold off to reset plot behaviour
+hold off;
+% Save diagram
+saveas(gcf, 'FSIM_FSIMc_comparison_bar_chart.png');
 %-----------------------------------------------------------------------
 
 %-----------------------------------------------------------------------
 % Indication of script completed
 %-----------------------------------------------------------------------
-disp('FeatureSIM');
+disp('FeatureSIM is completed');
 %-----------------------------------------------------------------------

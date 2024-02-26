@@ -1,5 +1,15 @@
+################################################
 # Base model
 # This is a skeleton model which can be trained and used
+################################################
+
+################################################
+# Author: Yumu Xie
+################################################
+
+################################################
+# The code here is archived here, and it is no longer used in later experiments
+################################################
 
 import tensorflow as tf
 from tensorflow.keras.layers import GlobalAveragePooling2D, Dense
@@ -24,4 +34,4 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 # Model summary
 model.summary()
 
-# Add your code here to train the model with your dataset
+# Code here to train the model with your dataset
