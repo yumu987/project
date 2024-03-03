@@ -81,6 +81,9 @@ import tensorflow as tf
 import gc
 import atexit
 
+import signal
+import sys
+
 ################################################
 # Input images
 ################################################
@@ -511,225 +514,249 @@ def super_resolve_image(input_path, output_path, model_path = 'psnr-small'):
         # Handle other exceptions
         print(f"An exception occurred: {e}")
 
+def signal_handler(signum, frame):
+    print(f"Script terminated with signal {signum}")
+    print(f"Script terminated with signal {frame}")
+    # Additional cleanup or logging can be performed here
+    sys.exit(1)
+
 # main
 if __name__ == "__main__":
 
-    atexit.register(cleanup)
+    # Set up the signal handler for common termination signals
+    signal.signal(signal.SIGINT, signal_handler) # Ctrl+C
+    signal.signal(signal.SIGTERM, signal_handler) # Termination signal
 
-    gpus = tf.config.experimental.list_physical_devices('GPU')
-    if gpus:
-        try:
-            # Currently, memory growth needs to be the same across GPUs
-            for gpu in gpus:
-                tf.config.experimental.set_memory_growth(gpu, True)
-        except RuntimeError as e:
-            print(e)
+    try:
+        while True:
+            atexit.register(cleanup)
 
-    ##########
-    # half image files are not used in RDN
-    # quarter image files will be utilised
-    # full reference image files will take half image files 
-    # to use instead of original image files
-    # this is due to different pixel dimensions
-    # RDN has issues related to process half image files
-    # Debugging:
-    # 1. Script memory allocation [x]
-    # 2. RDN processing limitation (very large pixel dimensions may not lead RDN working) [o]
-    ##########
+            gpus = tf.config.experimental.list_physical_devices('GPU')
+            if gpus:
+                try:
+                    # Currently, memory growth needs to be the same across GPUs
+                    for gpu in gpus:
+                        tf.config.experimental.set_memory_growth(gpu, True)
+                except RuntimeError as e:
+                    print(e)
 
-    print("RDN psnr-small part is starting")
+            ##########
+            # half image files are not used in RDN
+            # quarter image files will be utilised
+            # full reference image files will take half image files 
+            # to use instead of original image files
+            # this is due to different pixel dimensions
+            # RDN has issues related to process half image files
+            # Debugging:
+            # 1. Script memory allocation [x]
+            # 2. RDN processing limitation (very large pixel dimensions may not lead RDN working) [o]
+            ##########
 
-    # Start time
-    start_time = time.time()
+            print("RDN psnr-small part is starting")
 
-    # Nearest-neighbor
-    # Load data set and perform super-resolution
-    nearest_neighbor_start_time = time.time()
-    for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = nearest_neighbor_quarter_image_files[i]
-        # input_file = nearest_neighbor_half_image_files[i]
-        output_file = nearest_neighbor_psnr_small_image_files[i]
-        super_resolve_image(input_file, output_file)
-    nearest_neighbor_end_time = time.time()
-    nearest_neighbor_elapsed_time = nearest_neighbor_end_time - nearest_neighbor_start_time
-    nearest_neighbor_average_time = nearest_neighbor_elapsed_time/25
-    # Release resources after processing each batch
-    cv2.destroyAllWindows()
-    tf.keras.backend.clear_session()
-    # Trigger garbage collection
-    gc.collect()
+            # Start time
+            start_time = time.time()
 
-    # Bilinear
-    # Load data set and perform super-resolution
-    bilinear_start_time = time.time()
-    for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = bilinear_quarter_image_files[i]
-        # input_file = bilinear_half_image_files[i]
-        output_file = bilinear_psnr_small_image_files[i]
-        super_resolve_image(input_file, output_file)
-    bilinear_end_time = time.time()
-    bilinear_elapsed_time = bilinear_end_time - bilinear_start_time
-    bilinear_average_time = bilinear_elapsed_time/25
-    # Release resources after processing each batch
-    cv2.destroyAllWindows()
-    tf.keras.backend.clear_session()
-    # Trigger garbage collection
-    gc.collect()
+            # Nearest-neighbor
+            # Load data set and perform super-resolution
+            nearest_neighbor_start_time = time.time()
+            for i in range(25): # len(input_image_files) / len(output_image_files
+                input_file = nearest_neighbor_quarter_image_files[i]
+                # input_file = nearest_neighbor_half_image_files[i]
+                output_file = nearest_neighbor_psnr_small_image_files[i]
+                super_resolve_image(input_file, output_file)
+            nearest_neighbor_end_time = time.time()
+            nearest_neighbor_elapsed_time = nearest_neighbor_end_time - nearest_neighbor_start_time
+            nearest_neighbor_average_time = nearest_neighbor_elapsed_time/25
+            # Release resources after processing each batch
+            cv2.destroyAllWindows()
+            tf.keras.backend.clear_session()
+            # Trigger garbage collection
+            gc.collect()
 
-    # Bicubic
-    # Load data set and perform super-resolution
-    bicubic_start_time = time.time()
-    for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = bicubic_quarter_image_files[i]
-        # input_file = bicubic_half_image_files[i]
-        output_file = bicubic_psnr_small_image_files[i]
-        super_resolve_image(input_file, output_file)
-    bicubic_end_time = time.time()
-    bicubic_elapsed_time = bicubic_end_time - bicubic_start_time
-    bicubic_average_time = bicubic_elapsed_time/25
-    # Release resources after processing each batch
-    cv2.destroyAllWindows()
-    tf.keras.backend.clear_session()
-    # Trigger garbage collection
-    gc.collect()
+            # Bilinear
+            # Load data set and perform super-resolution
+            bilinear_start_time = time.time()
+            for i in range(25): # len(input_image_files) / len(output_image_files
+                input_file = bilinear_quarter_image_files[i]
+                # input_file = bilinear_half_image_files[i]
+                output_file = bilinear_psnr_small_image_files[i]
+                super_resolve_image(input_file, output_file)
+            bilinear_end_time = time.time()
+            bilinear_elapsed_time = bilinear_end_time - bilinear_start_time
+            bilinear_average_time = bilinear_elapsed_time/25
+            # Release resources after processing each batch
+            cv2.destroyAllWindows()
+            tf.keras.backend.clear_session()
+            # Trigger garbage collection
+            gc.collect()
 
-    # Lanczos
-    # Load data set and perform super-resolution
-    lanczos_start_time = time.time()
-    for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = lanczos_quarter_image_files[i]
-        # input_file = lanczos_half_image_files[i]
-        output_file = lanczos_psnr_small_image_files[i]
-        super_resolve_image(input_file, output_file)
-    lanczos_end_time = time.time()
-    lanczos_elapsed_time = lanczos_end_time - lanczos_start_time
-    lanczos_average_time = lanczos_elapsed_time/25
-    # Release resources after processing each batch
-    cv2.destroyAllWindows()
-    tf.keras.backend.clear_session()
-    # Trigger garbage collection
-    gc.collect()
+            # Bicubic
+            # Load data set and perform super-resolution
+            bicubic_start_time = time.time()
+            for i in range(25): # len(input_image_files) / len(output_image_files
+                input_file = bicubic_quarter_image_files[i]
+                # input_file = bicubic_half_image_files[i]
+                output_file = bicubic_psnr_small_image_files[i]
+                super_resolve_image(input_file, output_file)
+            bicubic_end_time = time.time()
+            bicubic_elapsed_time = bicubic_end_time - bicubic_start_time
+            bicubic_average_time = bicubic_elapsed_time/25
+            # Release resources after processing each batch
+            cv2.destroyAllWindows()
+            tf.keras.backend.clear_session()
+            # Trigger garbage collection
+            gc.collect()
 
-    # Pixel area relation
-    # Load data set and perform super-resolution
-    pixel_area_relation_start_time = time.time()
-    for i in range(25): # len(input_image_files) / len(output_image_files
-        input_file = pixel_area_relation_quarter_image_files[i]
-        # input_file = pixel_area_relation_half_image_files[i]
-        output_file = pixel_area_relation_psnr_small_image_files[i]
-        super_resolve_image(input_file, output_file)
-    pixel_area_relation_end_time = time.time()
-    pixel_area_relation_elapsed_time = pixel_area_relation_end_time - pixel_area_relation_start_time
-    pixel_area_relation_average_time = pixel_area_relation_elapsed_time/25
-    # Release resources after processing each batch
-    cv2.destroyAllWindows()
-    tf.keras.backend.clear_session()
-    # Trigger garbage collection
-    gc.collect()
+            # Lanczos
+            # Load data set and perform super-resolution
+            lanczos_start_time = time.time()
+            for i in range(25): # len(input_image_files) / len(output_image_files
+                input_file = lanczos_quarter_image_files[i]
+                # input_file = lanczos_half_image_files[i]
+                output_file = lanczos_psnr_small_image_files[i]
+                super_resolve_image(input_file, output_file)
+            lanczos_end_time = time.time()
+            lanczos_elapsed_time = lanczos_end_time - lanczos_start_time
+            lanczos_average_time = lanczos_elapsed_time/25
+            # Release resources after processing each batch
+            cv2.destroyAllWindows()
+            tf.keras.backend.clear_session()
+            # Trigger garbage collection
+            gc.collect()
 
-    # End time
-    end_time = time.time()
+            # Pixel area relation
+            # Load data set and perform super-resolution
+            pixel_area_relation_start_time = time.time()
+            for i in range(25): # len(input_image_files) / len(output_image_files
+                input_file = pixel_area_relation_quarter_image_files[i]
+                # input_file = pixel_area_relation_half_image_files[i]
+                output_file = pixel_area_relation_psnr_small_image_files[i]
+                super_resolve_image(input_file, output_file)
+            pixel_area_relation_end_time = time.time()
+            pixel_area_relation_elapsed_time = pixel_area_relation_end_time - pixel_area_relation_start_time
+            pixel_area_relation_average_time = pixel_area_relation_elapsed_time/25
+            # Release resources after processing each batch
+            cv2.destroyAllWindows()
+            tf.keras.backend.clear_session()
+            # Trigger garbage collection
+            gc.collect()
 
-    # Total processing time
-    elapsed_time = end_time - start_time
+            # End time
+            end_time = time.time()
 
-    # Average processing time
-    average_time = elapsed_time/125
+            # Total processing time
+            elapsed_time = end_time - start_time
 
-    # Display the processsing time
-    print(f"RDN: psnr-small | total processing time: {elapsed_time} seconds")
-    print(f"RDN: psnr-small | average processing time: {average_time} seconds")
+            # Average processing time
+            average_time = elapsed_time/125
 
-    # Indication of super-resolution completed
-    print(f"RDN: psnr-small | Super-resolution completed")
+            # Display the processsing time
+            print(f"RDN: psnr-small | total processing time: {elapsed_time} seconds")
+            print(f"RDN: psnr-small | average processing time: {average_time} seconds")
 
-    ####################
-    # Plotting diagram part: table
-    ####################
+            # Indication of super-resolution completed
+            print(f"RDN: psnr-small | Super-resolution completed")
 
-    # Data to be used to plot table
-    data = {
-        'Processing metrics' : ['Nearest-neighbor + psnr-small',
-                                'Bilinear + psnr-small',
-                                'Bicubic + psnr-small',
-                                'Lanczos + psnr-small',
-                                'Pixel area relation + psnr-small',
-                                'Total'
-                                ],
-        'Scale' : ['2',
-                   '2',
-                   '2',
-                   '2',
-                   '2',
-                   '2'
-                   ],
-        'Processing time' : [nearest_neighbor_elapsed_time,
-                             bilinear_elapsed_time,
-                             bicubic_elapsed_time,
-                             lanczos_elapsed_time,
-                             pixel_area_relation_elapsed_time,
-                             elapsed_time
-                             ],
-        'Average processing time' : [nearest_neighbor_average_time,
-                                     bilinear_average_time,
-                                     bicubic_average_time,
-                                     lanczos_average_time,
-                                     pixel_area_relation_average_time,
-                                     average_time]
-    }
+            ####################
+            # Plotting diagram part: table
+            ####################
 
-    # Convert the data into a pandas DataFrame
-    df = pd.DataFrame(data)
-    df.fillna('-', inplace=True) # Replacing missing values with '-'
+            # Data to be used to plot table
+            data = {
+                'Processing metrics' : ['Nearest-neighbor + psnr-small',
+                                        'Bilinear + psnr-small',
+                                        'Bicubic + psnr-small',
+                                        'Lanczos + psnr-small',
+                                        'Pixel area relation + psnr-small',
+                                        'Total'
+                                        ],
+                'Scale' : ['2',
+                        '2',
+                        '2',
+                        '2',
+                        '2',
+                        '2'
+                        ],
+                'Processing time' : [nearest_neighbor_elapsed_time,
+                                    bilinear_elapsed_time,
+                                    bicubic_elapsed_time,
+                                    lanczos_elapsed_time,
+                                    pixel_area_relation_elapsed_time,
+                                    elapsed_time
+                                    ],
+                'Average processing time' : [nearest_neighbor_average_time,
+                                            bilinear_average_time,
+                                            bicubic_average_time,
+                                            lanczos_average_time,
+                                            pixel_area_relation_average_time,
+                                            average_time]
+            }
 
-    # Create a figure to plot the table
-    fig, ax = plt.subplots(figsize=(12, 8)) # Size should be adjusted to match the aspect ratio of your data
-    ax.axis('off') # Hide the axes
+            # Convert the data into a pandas DataFrame
+            df = pd.DataFrame(data)
+            df.fillna('-', inplace=True) # Replacing missing values with '-'
 
-    #############################
-    # Table properties
-    #############################
+            # Create a figure to plot the table
+            fig, ax = plt.subplots(figsize=(12, 8)) # Size should be adjusted to match the aspect ratio of your data
+            ax.axis('off') # Hide the axes
 
-    #############################
-    # Loose version of table
-    # Table will take more space
-    #############################
-    # tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
-    # tab.auto_set_font_size(False)
-    # tab.set_fontsize(10)
-    # tab.scale(1.2, 1.2)  # Scale table size
+            #############################
+            # Table properties
+            #############################
 
-    #############################
-    # Plot the table
-    #############################
-    # Compact version of table
-    # Table will take less space
-    #############################
-    tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
-    tab.auto_set_font_size(False)
-    tab.set_fontsize(10) # Adjust to match the font size in your image
-    tab.auto_set_column_width(col=list(range(len(df.columns)))) # Adjust column widths
+            #############################
+            # Loose version of table
+            # Table will take more space
+            #############################
+            # tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
+            # tab.auto_set_font_size(False)
+            # tab.set_fontsize(10)
+            # tab.scale(1.2, 1.2)  # Scale table size
 
-    # Style the table
-    for (i, j), val in np.ndenumerate(df.values):
-        if j == 0: # First column
-            tab[(i+1, j)].set_facecolor('#dddddd') # Shade the first column
-        if j == -1 or j == 0: # Header or first column
-            tab[(i+1, j)].set_text_props(weight='bold') # Bold the font of first column
+            #############################
+            # Plot the table
+            #############################
+            # Compact version of table
+            # Table will take less space
+            #############################
+            tab = table(ax, df, loc='center', cellLoc='center', colLoc='center')
+            tab.auto_set_font_size(False)
+            tab.set_fontsize(10) # Adjust to match the font size in your image
+            tab.auto_set_column_width(col=list(range(len(df.columns)))) # Adjust column widths
 
-    # Add the title
-    plt.suptitle('TABLE\nThe processing time of RDN psnr-small model', fontsize=14, weight='bold')
+            # Style the table
+            for (i, j), val in np.ndenumerate(df.values):
+                if j == 0: # First column
+                    tab[(i+1, j)].set_facecolor('#dddddd') # Shade the first column
+                if j == -1 or j == 0: # Header or first column
+                    tab[(i+1, j)].set_text_props(weight='bold') # Bold the font of first column
 
-    # Save the figure as a PDF
-    pdf_file = 'psnr-small.pdf'
-    plt.savefig(pdf_file, bbox_inches='tight', pad_inches=0.05)
+            # Add the title
+            plt.suptitle('TABLE\nThe processing time of RDN psnr-small model', fontsize=14, weight='bold')
 
-    # Save the figure as an image (PNG)
-    png_file = 'psnr-small.png'
-    plt.savefig(png_file, bbox_inches='tight', pad_inches=0.05, dpi=300)
+            # Save the figure as a PDF
+            pdf_file = 'psnr-small.pdf'
+            plt.savefig(pdf_file, bbox_inches='tight', pad_inches=0.05)
 
-    # Close the matplotlib figure
-    plt.close(fig)
+            # Save the figure as an image (PNG)
+            png_file = 'psnr-small.png'
+            plt.savefig(png_file, bbox_inches='tight', pad_inches=0.05, dpi=300)
 
-    # Indication of plotting table completed
-    print("Plotting table completed")
+            # Close the matplotlib figure
+            plt.close(fig)
+
+            # Indication of plotting table completed
+            print("Plotting table completed")
+
+            pass
+
+    except KeyboardInterrupt:
+        # Handle Ctrl+C gracefully
+        print("Script interrupted manually.")
+    except Exception as e:
+        # Handle other exceptions
+        print(f"An error occurred: {e}")
+    finally:
+        # Additional cleanup or finalization code
+        print("Script exiting.")

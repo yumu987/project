@@ -1,5 +1,2 @@
 Only "nasnet" model can work
 "inception_resnet" and "mobilenet" cannot work
-
-"model.py" is used to train a model, but there is no training code added in this script
-"model.py" is just a skeleton code

@@ -1,0 +1,602 @@
+Loading images from directory :  all
+Evaluating :  all/002_lanczos_gans.jpg
+NIMA Score : 4.842 +- (1.530)
+
+Evaluating :  all/004_lanczos_gans.jpg
+NIMA Score : 4.511 +- (1.508)
+
+Evaluating :  all/023_bilinear_gans.jpg
+NIMA Score : 4.675 +- (1.529)
+
+Evaluating :  all/020_nearest_neighbor_gans.jpg
+NIMA Score : 5.262 +- (1.521)
+
+Evaluating :  all/021_pixel_area_relation_gans.jpg
+NIMA Score : 5.270 +- (1.287)
+
+Evaluating :  all/005_lanczos_gans.jpg
+NIMA Score : 4.332 +- (1.490)
+
+Evaluating :  all/021.jpg
+NIMA Score : 5.278 +- (1.306)
+
+Evaluating :  all/012.jpg
+NIMA Score : 5.220 +- (1.410)
+
+Evaluating :  all/024_nearest_neighbor_gans.jpg
+NIMA Score : 5.821 +- (1.429)
+
+Evaluating :  all/006_nearest_neighbor_gans.jpg
+NIMA Score : 5.220 +- (1.510)
+
+Evaluating :  all/017_bilinear_gans.jpg
+NIMA Score : 5.481 +- (1.561)
+
+Evaluating :  all/022_pixel_area_relation_gans.jpg
+NIMA Score : 5.102 +- (1.449)
+
+Evaluating :  all/011.jpg
+NIMA Score : 4.900 +- (1.441)
+
+Evaluating :  all/007_nearest_neighbor_gans.jpg
+NIMA Score : 5.316 +- (1.553)
+
+Evaluating :  all/009_bilinear_gans.jpg
+NIMA Score : 5.940 +- (1.572)
+
+Evaluating :  all/020.jpg
+NIMA Score : 5.129 +- (1.469)
+
+Evaluating :  all/004_bilinear_gans.jpg
+NIMA Score : 4.529 +- (1.501)
+
+Evaluating :  all/012_nearest_neighbor_gans.jpg
+NIMA Score : 4.961 +- (1.448)
+
+Evaluating :  all/002_nearest_neighbor_gans.jpg
+NIMA Score : 4.838 +- (1.508)
+
+Evaluating :  all/022_nearest_neighbor_gans.jpg
+NIMA Score : 4.794 +- (1.475)
+
+Evaluating :  all/022_bilinear_gans.jpg
+NIMA Score : 4.823 +- (1.471)
+
+Evaluating :  all/018_nearest_neighbor_gans.jpg
+NIMA Score : 5.371 +- (1.491)
+
+Evaluating :  all/022_bicubic_gans.jpg
+NIMA Score : 4.649 +- (1.453)
+
+Evaluating :  all/015.jpg
+NIMA Score : 5.260 +- (1.375)
+
+Evaluating :  all/004_bicubic_gans.jpg
+NIMA Score : 4.475 +- (1.509)
+
+Evaluating :  all/010_bilinear_gans.jpg
+NIMA Score : 4.649 +- (1.481)
+
+Evaluating :  all/009_lanczos_gans.jpg
+NIMA Score : 5.945 +- (1.584)
+
+Evaluating :  all/006_lanczos_gans.jpg
+NIMA Score : 5.320 +- (1.480)
+
+Evaluating :  all/019_nearest_neighbor_gans.jpg
+NIMA Score : 5.603 +- (1.583)
+
+Evaluating :  all/024_bicubic_gans.jpg
+NIMA Score : 5.787 +- (1.412)
+
+Evaluating :  all/024_pixel_area_relation_gans.jpg
+NIMA Score : 5.837 +- (1.408)
+
+Evaluating :  all/016_bilinear_gans.jpg
+NIMA Score : 5.531 +- (1.368)
+
+Evaluating :  all/017_lanczos_gans.jpg
+NIMA Score : 5.448 +- (1.575)
+
+Evaluating :  all/017_pixel_area_relation_gans.jpg
+NIMA Score : 5.467 +- (1.548)
+
+Evaluating :  all/014.jpg
+NIMA Score : 5.150 +- (1.459)
+
+Evaluating :  all/001_nearest_neighbor_gans.jpg
+NIMA Score : 4.896 +- (1.488)
+
+Evaluating :  all/013_bilinear_gans.jpg
+NIMA Score : 5.053 +- (1.561)
+
+Evaluating :  all/002.jpg
+NIMA Score : 5.264 +- (1.496)
+
+Evaluating :  all/018.jpg
+NIMA Score : 5.677 +- (1.505)
+
+Evaluating :  all/001_pixel_area_relation_gans.jpg
+NIMA Score : 5.474 +- (1.398)
+
+Evaluating :  all/003_bilinear_gans.jpg
+NIMA Score : 4.826 +- (1.412)
+
+Evaluating :  all/023_pixel_area_relation_gans.jpg
+NIMA Score : 5.294 +- (1.468)
+
+Evaluating :  all/010_lanczos_gans.jpg
+NIMA Score : 4.465 +- (1.480)
+
+Evaluating :  all/008_bicubic_gans.jpg
+NIMA Score : 5.192 +- (1.541)
+
+Evaluating :  all/001_bilinear_gans.jpg
+NIMA Score : 5.012 +- (1.464)
+
+Evaluating :  all/013_lanczos_gans.jpg
+NIMA Score : 5.001 +- (1.550)
+
+Evaluating :  all/015_bilinear_gans.jpg
+NIMA Score : 4.930 +- (1.433)
+
+Evaluating :  all/015_pixel_area_relation_gans.jpg
+NIMA Score : 5.319 +- (1.390)
+
+Evaluating :  all/020_lanczos_gans.jpg
+NIMA Score : 5.364 +- (1.518)
+
+Evaluating :  all/008_nearest_neighbor_gans.jpg
+NIMA Score : 5.167 +- (1.537)
+
+Evaluating :  all/011_bicubic_gans.jpg
+NIMA Score : 4.220 +- (1.374)
+
+Evaluating :  all/023_bicubic_gans.jpg
+NIMA Score : 4.709 +- (1.515)
+
+Evaluating :  all/019_pixel_area_relation_gans.jpg
+NIMA Score : 5.525 +- (1.516)
+
+Evaluating :  all/019_bilinear_gans.jpg
+NIMA Score : 5.525 +- (1.545)
+
+Evaluating :  all/008_lanczos_gans.jpg
+NIMA Score : 5.143 +- (1.560)
+
+Evaluating :  all/005.jpg
+NIMA Score : 4.439 +- (1.504)
+
+Evaluating :  all/011_bilinear_gans.jpg
+NIMA Score : 4.189 +- (1.379)
+
+Evaluating :  all/006.jpg
+NIMA Score : 5.250 +- (1.521)
+
+Evaluating :  all/017.jpg
+NIMA Score : 5.693 +- (1.546)
+
+Evaluating :  all/016_pixel_area_relation_gans.jpg
+NIMA Score : 5.634 +- (1.367)
+
+Evaluating :  all/006_bilinear_gans.jpg
+NIMA Score : 5.094 +- (1.501)
+
+Evaluating :  all/011_lanczos_gans.jpg
+NIMA Score : 4.172 +- (1.378)
+
+Evaluating :  all/003_nearest_neighbor_gans.jpg
+NIMA Score : 4.721 +- (1.447)
+
+Evaluating :  all/014_pixel_area_relation_gans.jpg
+NIMA Score : 5.228 +- (1.464)
+
+Evaluating :  all/004_pixel_area_relation_gans.jpg
+NIMA Score : 4.642 +- (1.516)
+
+Evaluating :  all/010_pixel_area_relation_gans.jpg
+NIMA Score : 5.269 +- (1.455)
+
+Evaluating :  all/016_bicubic_gans.jpg
+NIMA Score : 5.506 +- (1.375)
+
+Evaluating :  all/023_nearest_neighbor_gans.jpg
+NIMA Score : 4.531 +- (1.506)
+
+Evaluating :  all/004.jpg
+NIMA Score : 4.648 +- (1.510)
+
+Evaluating :  all/011_nearest_neighbor_gans.jpg
+NIMA Score : 4.160 +- (1.423)
+
+Evaluating :  all/008_bilinear_gans.jpg
+NIMA Score : 5.097 +- (1.518)
+
+Evaluating :  all/015_bicubic_gans.jpg
+NIMA Score : 4.954 +- (1.435)
+
+Evaluating :  all/019_bicubic_gans.jpg
+NIMA Score : 5.520 +- (1.546)
+
+Evaluating :  all/021_bicubic_gans.jpg
+NIMA Score : 5.152 +- (1.321)
+
+Evaluating :  all/025_bilinear_gans.jpg
+NIMA Score : 5.820 +- (1.585)
+
+Evaluating :  all/017_nearest_neighbor_gans.jpg
+NIMA Score : 5.493 +- (1.581)
+
+Evaluating :  all/003.jpg
+NIMA Score : 5.130 +- (1.399)
+
+Evaluating :  all/014_lanczos_gans.jpg
+NIMA Score : 5.017 +- (1.460)
+
+Evaluating :  all/007_lanczos_gans.jpg
+NIMA Score : 5.205 +- (1.563)
+
+Evaluating :  all/023_lanczos_gans.jpg
+NIMA Score : 4.747 +- (1.529)
+
+Evaluating :  all/012_bicubic_gans.jpg
+NIMA Score : 5.045 +- (1.435)
+
+Evaluating :  all/002_pixel_area_relation_gans.jpg
+NIMA Score : 5.062 +- (1.510)
+
+Evaluating :  all/004_nearest_neighbor_gans.jpg
+NIMA Score : 4.469 +- (1.521)
+
+Evaluating :  all/024_lanczos_gans.jpg
+NIMA Score : 5.798 +- (1.412)
+
+Evaluating :  all/025_bicubic_gans.jpg
+NIMA Score : 5.820 +- (1.588)
+
+Evaluating :  all/025_nearest_neighbor_gans.jpg
+NIMA Score : 5.725 +- (1.564)
+
+Evaluating :  all/018_pixel_area_relation_gans.jpg
+NIMA Score : 5.570 +- (1.509)
+
+Evaluating :  all/012_bilinear_gans.jpg
+NIMA Score : 4.996 +- (1.421)
+
+Evaluating :  all/012_pixel_area_relation_gans.jpg
+NIMA Score : 5.282 +- (1.409)
+
+Evaluating :  all/016_nearest_neighbor_gans.jpg
+NIMA Score : 5.480 +- (1.376)
+
+Evaluating :  all/002_bilinear_gans.jpg
+NIMA Score : 4.858 +- (1.519)
+
+Evaluating :  all/009_nearest_neighbor_gans.jpg
+NIMA Score : 6.059 +- (1.579)
+
+Evaluating :  all/021_nearest_neighbor_gans.jpg
+NIMA Score : 5.049 +- (1.345)
+
+Evaluating :  all/010_bicubic_gans.jpg
+NIMA Score : 4.473 +- (1.477)
+
+Evaluating :  all/005_bicubic_gans.jpg
+NIMA Score : 4.285 +- (1.485)
+
+Evaluating :  all/020_bicubic_gans.jpg
+NIMA Score : 5.361 +- (1.512)
+
+Evaluating :  all/005_nearest_neighbor_gans.jpg
+NIMA Score : 4.391 +- (1.475)
+
+Evaluating :  all/001_bicubic_gans.jpg
+NIMA Score : 4.829 +- (1.466)
+
+Evaluating :  all/022_lanczos_gans.jpg
+NIMA Score : 4.672 +- (1.448)
+
+Evaluating :  all/003_bicubic_gans.jpg
+NIMA Score : 4.747 +- (1.415)
+
+Evaluating :  all/015_nearest_neighbor_gans.jpg
+NIMA Score : 5.012 +- (1.489)
+
+Evaluating :  all/014_bilinear_gans.jpg
+NIMA Score : 5.032 +- (1.463)
+
+Evaluating :  all/018_bilinear_gans.jpg
+NIMA Score : 5.581 +- (1.516)
+
+Evaluating :  all/007_pixel_area_relation_gans.jpg
+NIMA Score : 5.475 +- (1.521)
+
+Evaluating :  all/005_bilinear_gans.jpg
+NIMA Score : 4.203 +- (1.499)
+
+Evaluating :  all/003_lanczos_gans.jpg
+NIMA Score : 4.856 +- (1.437)
+
+Evaluating :  all/020_pixel_area_relation_gans.jpg
+NIMA Score : 5.221 +- (1.473)
+
+Evaluating :  all/009_bicubic_gans.jpg
+NIMA Score : 6.010 +- (1.583)
+
+Evaluating :  all/006_pixel_area_relation_gans.jpg
+NIMA Score : 5.180 +- (1.512)
+
+Evaluating :  all/007_bicubic_gans.jpg
+NIMA Score : 5.352 +- (1.588)
+
+Evaluating :  all/007.jpg
+NIMA Score : 5.465 +- (1.519)
+
+Evaluating :  all/006_bicubic_gans.jpg
+NIMA Score : 5.254 +- (1.469)
+
+Evaluating :  all/016.jpg
+NIMA Score : 5.738 +- (1.329)
+
+Evaluating :  all/013_pixel_area_relation_gans.jpg
+NIMA Score : 5.505 +- (1.516)
+
+Evaluating :  all/003_pixel_area_relation_gans.jpg
+NIMA Score : 5.059 +- (1.397)
+
+Evaluating :  all/021_bilinear_gans.jpg
+NIMA Score : 5.218 +- (1.315)
+
+Evaluating :  all/022.jpg
+NIMA Score : 5.236 +- (1.451)
+
+Evaluating :  all/009.jpg
+NIMA Score : 5.881 +- (1.504)
+
+Evaluating :  all/002_bicubic_gans.jpg
+NIMA Score : 4.850 +- (1.512)
+
+Evaluating :  all/014_nearest_neighbor_gans.jpg
+NIMA Score : 5.022 +- (1.499)
+
+Evaluating :  all/016_lanczos_gans.jpg
+NIMA Score : 5.541 +- (1.383)
+
+Evaluating :  all/025_pixel_area_relation_gans.jpg
+NIMA Score : 5.852 +- (1.562)
+
+Evaluating :  all/015_lanczos_gans.jpg
+NIMA Score : 4.898 +- (1.443)
+
+Evaluating :  all/025.jpg
+NIMA Score : 5.949 +- (1.553)
+
+Evaluating :  all/011_pixel_area_relation_gans.jpg
+NIMA Score : 4.771 +- (1.416)
+
+Evaluating :  all/010.jpg
+NIMA Score : 4.968 +- (1.424)
+
+Evaluating :  all/007_bilinear_gans.jpg
+NIMA Score : 5.339 +- (1.585)
+
+Evaluating :  all/001.jpg
+NIMA Score : 5.326 +- (1.410)
+
+Evaluating :  all/010_nearest_neighbor_gans.jpg
+NIMA Score : 4.411 +- (1.492)
+
+Evaluating :  all/024_bilinear_gans.jpg
+NIMA Score : 5.827 +- (1.414)
+
+Evaluating :  all/018_lanczos_gans.jpg
+NIMA Score : 5.552 +- (1.506)
+
+Evaluating :  all/008.jpg
+NIMA Score : 5.701 +- (1.432)
+
+Evaluating :  all/013.jpg
+NIMA Score : 5.443 +- (1.550)
+
+Evaluating :  all/021_lanczos_gans.jpg
+NIMA Score : 5.195 +- (1.319)
+
+Evaluating :  all/005_pixel_area_relation_gans.jpg
+NIMA Score : 4.108 +- (1.508)
+
+Evaluating :  all/017_bicubic_gans.jpg
+NIMA Score : 5.433 +- (1.561)
+
+Evaluating :  all/018_bicubic_gans.jpg
+NIMA Score : 5.544 +- (1.518)
+
+Evaluating :  all/013_nearest_neighbor_gans.jpg
+NIMA Score : 5.082 +- (1.573)
+
+Evaluating :  all/019_lanczos_gans.jpg
+NIMA Score : 5.488 +- (1.543)
+
+Evaluating :  all/024.jpg
+NIMA Score : 5.865 +- (1.404)
+
+Evaluating :  all/009_pixel_area_relation_gans.jpg
+NIMA Score : 5.927 +- (1.523)
+
+Evaluating :  all/013_bicubic_gans.jpg
+NIMA Score : 4.951 +- (1.550)
+
+Evaluating :  all/014_bicubic_gans.jpg
+NIMA Score : 5.019 +- (1.466)
+
+Evaluating :  all/020_bilinear_gans.jpg
+NIMA Score : 5.269 +- (1.498)
+
+Evaluating :  all/019.jpg
+NIMA Score : 5.536 +- (1.514)
+
+Evaluating :  all/008_pixel_area_relation_gans.jpg
+NIMA Score : 5.388 +- (1.413)
+
+Evaluating :  all/023.jpg
+NIMA Score : 5.158 +- (1.486)
+
+Evaluating :  all/012_lanczos_gans.jpg
+NIMA Score : 4.949 +- (1.422)
+
+Evaluating :  all/025_lanczos_gans.jpg
+NIMA Score : 5.835 +- (1.587)
+
+Evaluating :  all/001_lanczos_gans.jpg
+NIMA Score : 4.936 +- (1.478)
+
+**************************************** Ranking Images ****************************************
+1) 009_nearest_neighbor_gans.jpg : Score = 6.05907
+2) 009_bicubic_gans.jpg : Score = 6.00954
+3) 025.jpg : Score = 5.94897
+4) 009_lanczos_gans.jpg : Score = 5.94464
+5) 009_bilinear_gans.jpg : Score = 5.93996
+6) 009_pixel_area_relation_gans.jpg : Score = 5.92657
+7) 009.jpg : Score = 5.88139
+8) 024.jpg : Score = 5.86458
+9) 025_pixel_area_relation_gans.jpg : Score = 5.85245
+10) 024_pixel_area_relation_gans.jpg : Score = 5.83655
+11) 025_lanczos_gans.jpg : Score = 5.83456
+12) 024_bilinear_gans.jpg : Score = 5.82669
+13) 024_nearest_neighbor_gans.jpg : Score = 5.82100
+14) 025_bicubic_gans.jpg : Score = 5.82039
+15) 025_bilinear_gans.jpg : Score = 5.81991
+16) 024_lanczos_gans.jpg : Score = 5.79776
+17) 024_bicubic_gans.jpg : Score = 5.78718
+18) 016.jpg : Score = 5.73838
+19) 025_nearest_neighbor_gans.jpg : Score = 5.72512
+20) 008.jpg : Score = 5.70115
+21) 017.jpg : Score = 5.69317
+22) 018.jpg : Score = 5.67740
+23) 016_pixel_area_relation_gans.jpg : Score = 5.63415
+24) 019_nearest_neighbor_gans.jpg : Score = 5.60263
+25) 018_bilinear_gans.jpg : Score = 5.58137
+26) 018_pixel_area_relation_gans.jpg : Score = 5.57040
+27) 018_lanczos_gans.jpg : Score = 5.55219
+28) 018_bicubic_gans.jpg : Score = 5.54448
+29) 016_lanczos_gans.jpg : Score = 5.54072
+30) 019.jpg : Score = 5.53611
+31) 016_bilinear_gans.jpg : Score = 5.53102
+32) 019_bilinear_gans.jpg : Score = 5.52526
+33) 019_pixel_area_relation_gans.jpg : Score = 5.52512
+34) 019_bicubic_gans.jpg : Score = 5.52049
+35) 016_bicubic_gans.jpg : Score = 5.50602
+36) 013_pixel_area_relation_gans.jpg : Score = 5.50536
+37) 017_nearest_neighbor_gans.jpg : Score = 5.49294
+38) 019_lanczos_gans.jpg : Score = 5.48794
+39) 017_bilinear_gans.jpg : Score = 5.48072
+40) 016_nearest_neighbor_gans.jpg : Score = 5.48008
+41) 007_pixel_area_relation_gans.jpg : Score = 5.47501
+42) 001_pixel_area_relation_gans.jpg : Score = 5.47379
+43) 017_pixel_area_relation_gans.jpg : Score = 5.46652
+44) 007.jpg : Score = 5.46491
+45) 017_lanczos_gans.jpg : Score = 5.44811
+46) 013.jpg : Score = 5.44254
+47) 017_bicubic_gans.jpg : Score = 5.43345
+48) 008_pixel_area_relation_gans.jpg : Score = 5.38836
+49) 018_nearest_neighbor_gans.jpg : Score = 5.37094
+50) 020_lanczos_gans.jpg : Score = 5.36409
+51) 020_bicubic_gans.jpg : Score = 5.36068
+52) 007_bicubic_gans.jpg : Score = 5.35186
+53) 007_bilinear_gans.jpg : Score = 5.33893
+54) 001.jpg : Score = 5.32645
+55) 006_lanczos_gans.jpg : Score = 5.32037
+56) 015_pixel_area_relation_gans.jpg : Score = 5.31872
+57) 007_nearest_neighbor_gans.jpg : Score = 5.31582
+58) 023_pixel_area_relation_gans.jpg : Score = 5.29383
+59) 012_pixel_area_relation_gans.jpg : Score = 5.28195
+60) 021.jpg : Score = 5.27846
+61) 021_pixel_area_relation_gans.jpg : Score = 5.26984
+62) 010_pixel_area_relation_gans.jpg : Score = 5.26907
+63) 020_bilinear_gans.jpg : Score = 5.26877
+64) 002.jpg : Score = 5.26355
+65) 020_nearest_neighbor_gans.jpg : Score = 5.26156
+66) 015.jpg : Score = 5.25994
+67) 006_bicubic_gans.jpg : Score = 5.25425
+68) 006.jpg : Score = 5.24959
+69) 022.jpg : Score = 5.23635
+70) 014_pixel_area_relation_gans.jpg : Score = 5.22827
+71) 020_pixel_area_relation_gans.jpg : Score = 5.22138
+72) 006_nearest_neighbor_gans.jpg : Score = 5.22050
+73) 012.jpg : Score = 5.22039
+74) 021_bilinear_gans.jpg : Score = 5.21762
+75) 007_lanczos_gans.jpg : Score = 5.20530
+76) 021_lanczos_gans.jpg : Score = 5.19494
+77) 008_bicubic_gans.jpg : Score = 5.19225
+78) 006_pixel_area_relation_gans.jpg : Score = 5.18048
+79) 008_nearest_neighbor_gans.jpg : Score = 5.16699
+80) 023.jpg : Score = 5.15755
+81) 021_bicubic_gans.jpg : Score = 5.15233
+82) 014.jpg : Score = 5.15003
+83) 008_lanczos_gans.jpg : Score = 5.14297
+84) 003.jpg : Score = 5.13021
+85) 020.jpg : Score = 5.12882
+86) 022_pixel_area_relation_gans.jpg : Score = 5.10203
+87) 008_bilinear_gans.jpg : Score = 5.09696
+88) 006_bilinear_gans.jpg : Score = 5.09417
+89) 013_nearest_neighbor_gans.jpg : Score = 5.08240
+90) 002_pixel_area_relation_gans.jpg : Score = 5.06178
+91) 003_pixel_area_relation_gans.jpg : Score = 5.05925
+92) 013_bilinear_gans.jpg : Score = 5.05256
+93) 021_nearest_neighbor_gans.jpg : Score = 5.04866
+94) 012_bicubic_gans.jpg : Score = 5.04459
+95) 014_bilinear_gans.jpg : Score = 5.03159
+96) 014_nearest_neighbor_gans.jpg : Score = 5.02159
+97) 014_bicubic_gans.jpg : Score = 5.01932
+98) 014_lanczos_gans.jpg : Score = 5.01716
+99) 001_bilinear_gans.jpg : Score = 5.01213
+100) 015_nearest_neighbor_gans.jpg : Score = 5.01167
+101) 013_lanczos_gans.jpg : Score = 5.00141
+102) 012_bilinear_gans.jpg : Score = 4.99597
+103) 010.jpg : Score = 4.96822
+104) 012_nearest_neighbor_gans.jpg : Score = 4.96141
+105) 015_bicubic_gans.jpg : Score = 4.95426
+106) 013_bicubic_gans.jpg : Score = 4.95116
+107) 012_lanczos_gans.jpg : Score = 4.94881
+108) 001_lanczos_gans.jpg : Score = 4.93597
+109) 015_bilinear_gans.jpg : Score = 4.92997
+110) 011.jpg : Score = 4.90023
+111) 015_lanczos_gans.jpg : Score = 4.89811
+112) 001_nearest_neighbor_gans.jpg : Score = 4.89638
+113) 002_bilinear_gans.jpg : Score = 4.85810
+114) 003_lanczos_gans.jpg : Score = 4.85595
+115) 002_bicubic_gans.jpg : Score = 4.84985
+116) 002_lanczos_gans.jpg : Score = 4.84217
+117) 002_nearest_neighbor_gans.jpg : Score = 4.83830
+118) 001_bicubic_gans.jpg : Score = 4.82909
+119) 003_bilinear_gans.jpg : Score = 4.82576
+120) 022_bilinear_gans.jpg : Score = 4.82268
+121) 022_nearest_neighbor_gans.jpg : Score = 4.79359
+122) 011_pixel_area_relation_gans.jpg : Score = 4.77116
+123) 003_bicubic_gans.jpg : Score = 4.74730
+124) 023_lanczos_gans.jpg : Score = 4.74674
+125) 003_nearest_neighbor_gans.jpg : Score = 4.72117
+126) 023_bicubic_gans.jpg : Score = 4.70949
+127) 023_bilinear_gans.jpg : Score = 4.67512
+128) 022_lanczos_gans.jpg : Score = 4.67196
+129) 022_bicubic_gans.jpg : Score = 4.64879
+130) 010_bilinear_gans.jpg : Score = 4.64862
+131) 004.jpg : Score = 4.64797
+132) 004_pixel_area_relation_gans.jpg : Score = 4.64170
+133) 023_nearest_neighbor_gans.jpg : Score = 4.53085
+134) 004_bilinear_gans.jpg : Score = 4.52856
+135) 004_lanczos_gans.jpg : Score = 4.51052
+136) 004_bicubic_gans.jpg : Score = 4.47540
+137) 010_bicubic_gans.jpg : Score = 4.47321
+138) 004_nearest_neighbor_gans.jpg : Score = 4.46936
+139) 010_lanczos_gans.jpg : Score = 4.46507
+140) 005.jpg : Score = 4.43923
+141) 010_nearest_neighbor_gans.jpg : Score = 4.41079
+142) 005_nearest_neighbor_gans.jpg : Score = 4.39061
+143) 005_lanczos_gans.jpg : Score = 4.33236
+144) 005_bicubic_gans.jpg : Score = 4.28488
+145) 011_bicubic_gans.jpg : Score = 4.22047
+146) 005_bilinear_gans.jpg : Score = 4.20334
+147) 011_bilinear_gans.jpg : Score = 4.18857
+148) 011_lanczos_gans.jpg : Score = 4.17248
+149) 011_nearest_neighbor_gans.jpg : Score = 4.16031
+150) 005_pixel_area_relation_gans.jpg : Score = 4.10807
