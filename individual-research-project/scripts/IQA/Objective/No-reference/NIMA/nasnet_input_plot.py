@@ -1,5 +1,5 @@
 ################################################
-# plot
+# nasnet_input_plot.py
 ################################################
 
 ################################################
@@ -83,11 +83,11 @@ def bar():
     # Customise x-axis labels
     plt.xticks(rotation=45, ha="right", rotation_mode="anchor")
     # Title and label the bar chart
-    plt.title('NIMA nasnet score in 25 images')
+    plt.title('NIMA nasnet score in 25 images (input)')
     # plt.xlabel('Index')
     plt.ylabel('Score')
     # Save the figure
-    plt.savefig('nasnet_bar_chart.png')
+    plt.savefig('nasnet_input_bar_chart.png')
     # Show the plot
     # plt.show()
     # Close the plot
@@ -104,11 +104,11 @@ def line():
     # Customise x-axis labels
     plt.xticks(rotation=45, ha="right", rotation_mode="anchor")
     # Title and label the line chart
-    plt.title('NIMA nasnet score in 25 images')
+    plt.title('NIMA nasnet score in 25 images (input)')
     # plt.xlabel('Index')
     plt.ylabel('Score')
     # Save the figure
-    plt.savefig('nasnet_line_chart.png')
+    plt.savefig('nasnet_input_line_chart.png')
     # Show the plot
     # plt.show()
     # Close the plot
@@ -127,21 +127,23 @@ def general():
     # Customise x-axis labels
     plt.xticks(rotation=45, ha="right", rotation_mode="anchor")
     # Title and label the bar chart
-    plt.title('NIMA nasnet score in 25 images')
+    plt.title('NIMA nasnet score in 25 images (input)')
     # plt.xlabel('Index')
     plt.ylabel('Score')
     # Save the figure
-    plt.savefig('nasnet_general_chart.png')
+    plt.savefig('nasnet_input_general_chart.png')
     # Show the plot
     # plt.show()
     # Close the plot
     plt.close()
 
 def main():
+    print("nasnet_input_plot.py is executing")
     sort_algorithm()
     bar()
     line()
     general()
+    print("nasnet_input_plot.py is finished")
 
 if __name__ == "__main__":
     main()

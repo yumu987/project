@@ -497,7 +497,7 @@ def super_resolve_image(input_path, output_path, model_path = 'noise-cancel'):
         img = cv2.imread(input_path)
         # Handle file not found error
         if img is None:
-            raise FileNotFoundError(f"Error: Unable to read input image at {input_file}")
+            raise FileNotFoundError(f"Error: Unable to read input image at {input_path}")
         # Initialise the RDN model
         model = RDN(weights=model_path)
         # Perform super-resolution of 'noise-cancel' model

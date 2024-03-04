@@ -352,7 +352,7 @@ def super_resolve_image(input_path, output_path, model_path = 'gans'):
         img = cv2.imread(input_path)
         # Handle file not found error
         if img is None:
-            raise FileNotFoundError(f"Error: Unable to read input image at {input_file}")
+            raise FileNotFoundError(f"Error: Unable to read input image at {input_path}")
         # Initialise the RRDN model
         model = RRDN(weights=model_path)
         # Perform super-resolution of 'gans' model
