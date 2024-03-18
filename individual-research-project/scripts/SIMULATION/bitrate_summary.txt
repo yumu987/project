@@ -1,0 +1,14 @@
+The mean bitrate of input in megabits is: 2136289742.3688235
+The mean bitrate of grayscale in megabits is: 1279510098.0015965
+The mean bitrate of compressed 1 in megabits is: 589760052.1580777
+The mean bitrate of compressed 25 in megabits is: 1331685787.366734
+The mean bitrate of compressed 50 in megabits is: 1787566394.6757696
+The mean bitrate of compressed 75 in megabits is: 2362100123.738812
+The mean bitrate of compressed 100 in megabits is: 8354725630.220499
+The mean bitrate of encoded in megabits is: 4406342629.291101
+The mean bitrate of decoded in megabits is: 4416543342.375157
+The mean bitrate of nearest-neighbor in megabits is: 42990957.03952881
+The mean bitrate of bilinear in megabits is: 39762997.44401459
+The mean bitrate of bicubic in megabits is: 41164187.63480713
+The mean bitrate of lanczos in megabits is: 40800236.57103241
+The mean bitrate of pixel area relation in megabits is: 35035120.80865448

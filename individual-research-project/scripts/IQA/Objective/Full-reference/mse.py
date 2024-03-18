@@ -273,6 +273,8 @@ def plot_bar_chart(mean_nearest_neighbor, mean_bilinear, mean_bicubic, mean_lanc
     plt.gca().yaxis.grid(True, zorder=0)
     # Plot the bar chart
     plt.bar(sample_name_array, sample_data_array)
+    # Customise x-axis labels
+    plt.xticks(rotation=15, ha="right", rotation_mode="anchor")
     # Title and label the bar chart
     plt.title('Average MSE in 25 images')
     plt.xlabel('Downsampling (Distortion)')
@@ -281,6 +283,8 @@ def plot_bar_chart(mean_nearest_neighbor, mean_bilinear, mean_bicubic, mean_lanc
     plt.savefig('MSE_bar_chart.png')
     # Show the plot
     # plt.show()
+    # Close the plot
+    plt.close()
     # Indication of plotting bar chart completed
     print("MSE: Bar chart has been drawn")
 

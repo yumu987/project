@@ -15,6 +15,7 @@ python dimension.py > "dimension.txt" # Save all output into 'dimension.txt'
 python mse.py
 python psnr.py
 python ssim.py
+python compression.py
 
 echo "Script is completed!"
 

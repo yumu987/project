@@ -13,3 +13,18 @@ INFO:root:######################################################################
 INFO:root:Resampling | pixel area relation half processing time: 12.122706413269043 seconds
 INFO:root:Resampling | pixel area relation quarter processing time: 9.792964935302734 seconds
 INFO:root:################################################################################################
+INFO:root:################################################################################################
+INFO:root:Downsampling | nearest-neighbor half processing time: 14.52976655960083 seconds
+INFO:root:Downsampling | bilinear half processing time: 13.52305293083191 seconds
+INFO:root:Downsampling | bicubic half processing time: 12.600097417831421 seconds
+INFO:root:Downsampling | lanczos half processing time: 13.553281307220459 seconds
+INFO:root:################################################################################################
+INFO:root:Downsampling | nearest-neighbor quarter processing time: 9.697934865951538 seconds
+INFO:root:Downsampling | bilinear quarter processing time: 9.375341415405273 seconds
+INFO:root:Downsampling | bicubic quarter processing time: 9.932551860809326 seconds
+INFO:root:Downsampling | lanczos quarter processing time: 10.248461723327637 seconds
+INFO:root:################################################################################################
+INFO:root:################################################################################################
+INFO:root:Resampling | pixel area relation half processing time: 12.566543102264404 seconds
+INFO:root:Resampling | pixel area relation quarter processing time: 9.905579566955566 seconds
+INFO:root:################################################################################################

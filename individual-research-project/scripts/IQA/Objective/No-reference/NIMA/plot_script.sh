@@ -11,6 +11,7 @@
 # Execute python scripts
 python nasnet_input_plot.py
 python nasnet_downsampling_plot.py
+python nasnet_average_plot.py
 
 # Exit the script
 exit

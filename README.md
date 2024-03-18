@@ -1,6 +1,6 @@
-# Single-image Super-resolution
+# EENG30009 Individual Research Project 3
 
-Project: Single-image Super-resolution
+A performance analysis of Single-image Super-resolution by using ESRGANs (SRGANs) upsampling in bitrate reduction scenarios
 
 Supervisor: 
 
@@ -14,16 +14,6 @@ Contributor:
 
 Yumu Xie po21744@bristol.ac.uk 
 
-Support library:
+University of Bristol
 
-https://github.com/idealo/image-super-resolution/
 
-https://github.com/idealo/image-super-resolution.git
-
-https://github.com/idealo/image-quality-assessment/
-
-https://github.com/idealo/image-quality-assessment.git
-
-https://github.com/titu1994/neural-image-assessment
-
-https://github.com/titu1994/neural-image-assessment.git
