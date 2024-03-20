@@ -41,6 +41,11 @@
 # https://faceconverter.com/how-image-size-is-calculated/#:~:text=Here%E2%80%99s%20a%20quick%20summary%20of%20the%20steps%20to,1024%20to%20ascertain%20the%20image%20size%20in%20megabytes
 ################################################
 
+# https://en.wikipedia.org/wiki/Bit_rate
+# The protocol I am following:
+# https://en.wikipedia.org/wiki/Binary_prefix
+# https://en.wikipedia.org/wiki/ISO/IEC_80000
+
 import cv2
 from PIL import Image
 import numpy as np
