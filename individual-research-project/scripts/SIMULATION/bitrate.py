@@ -143,7 +143,7 @@ def calculate_size(image_path):
     try:
         size = os.path.getsize(image_path)
         bits_size = size * 8 # Convert byte to bits (1 byte = 8 bits)
-        mega_size = bits_size / (1024 * 1024) # Convert bits to megabits
+        mega_size = bits_size / (1000 * 1000) # Convert bits to megabits
         return mega_size
     except Exception as e:
         # Handle exceptions
@@ -330,13 +330,14 @@ def plot_size_bar_chart(mean_input,
 
 def main():
     # Unit conversion
-    # x bits = x/1024 kbits = (x/1024)/1024 mbits ([x/(1024 * 1024)] mbits)
+    # x bits = x/1000 kbits = (x/1000)/1000 mbits ([x/(1000 * 1000)] mbits)
+    # y bytes = y/1024 kbytes = (y/1024)/1024 mbytes ([x/(1024 * 1024)] mbytes)
 
     input_files = ['input/{}.jpg'.format(str(i).zfill(3)) for i in range(1, 26)]
     for i in range(0, len(input_files), 1):
         input_batch = input_files[i]
         input_bitrate = calculate_bitrate(input_batch)
-        input_bitrate = input_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_bitrate = input_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_bitrate_array.append(input_bitrate)
         input_size = calculate_size(input_batch)
         input_size_array.append(input_size)
@@ -352,7 +353,7 @@ def main():
     for i in range(0, len(input_grayscale_files), 1):
         input_grayscale_batch = input_grayscale_files[i]
         input_grayscale_bitrate = calculate_bitrate(input_grayscale_batch)
-        input_grayscale_bitrate = input_grayscale_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_grayscale_bitrate = input_grayscale_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_grayscale_bitrate_array.append(input_grayscale_bitrate)
         input_grayscale_size = calculate_size(input_grayscale_batch)
         input_grayscale_size_array.append(input_grayscale_size)
@@ -368,7 +369,7 @@ def main():
     for i in range(0, len(input_compressed_1_files), 1):
         input_compressed_1_batch = input_compressed_1_files[i]
         input_compressed_1_bitrate = calculate_bitrate(input_compressed_1_batch)
-        input_compressed_1_bitrate = input_compressed_1_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_compressed_1_bitrate = input_compressed_1_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_compressed_1_bitrate_array.append(input_compressed_1_bitrate)
         input_compressed_1_size = calculate_size(input_compressed_1_batch)
         input_compressed_1_size_array.append(input_compressed_1_size)
@@ -384,7 +385,7 @@ def main():
     for i in range(0, len(input_compressed_25_files), 1):
         input_compressed_25_batch = input_compressed_25_files[i]
         input_compressed_25_bitrate = calculate_bitrate(input_compressed_25_batch)
-        input_compressed_25_bitrate = input_compressed_25_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_compressed_25_bitrate = input_compressed_25_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_compressed_25_bitrate_array.append(input_compressed_25_bitrate)
         input_compressed_25_size = calculate_size(input_compressed_25_batch)
         input_compressed_25_size_array.append(input_compressed_25_size)
@@ -400,7 +401,7 @@ def main():
     for i in range(0, len(input_compressed_50_files), 1):
         input_compressed_50_batch = input_compressed_50_files[i]
         input_compressed_50_bitrate = calculate_bitrate(input_compressed_50_batch)
-        input_compressed_50_bitrate = input_compressed_50_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_compressed_50_bitrate = input_compressed_50_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_compressed_50_bitrate_array.append(input_compressed_50_bitrate)
         input_compressed_50_size = calculate_size(input_compressed_50_batch)
         input_compressed_50_size_array.append(input_compressed_50_size)
@@ -416,7 +417,7 @@ def main():
     for i in range(0, len(input_compressed_75_files), 1):
         input_compressed_75_batch = input_compressed_75_files[i]
         input_compressed_75_bitrate = calculate_bitrate(input_compressed_75_batch)
-        input_compressed_75_bitrate = input_compressed_75_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_compressed_75_bitrate = input_compressed_75_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_compressed_75_bitrate_array.append(input_compressed_75_bitrate)
         input_compressed_75_size = calculate_size(input_compressed_75_batch)
         input_compressed_75_size_array.append(input_compressed_75_size)
@@ -432,7 +433,7 @@ def main():
     for i in range(0, len(input_compressed_100_files), 1):
         input_compressed_100_batch = input_compressed_100_files[i]
         input_compressed_100_bitrate = calculate_bitrate(input_compressed_100_batch)
-        input_compressed_100_bitrate = input_compressed_100_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_compressed_100_bitrate = input_compressed_100_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_compressed_100_bitrate_array.append(input_compressed_100_bitrate)
         input_compressed_100_size = calculate_size(input_compressed_100_batch)
         input_compressed_100_size_array.append(input_compressed_100_size)
@@ -448,7 +449,7 @@ def main():
     for i in range(0, len(input_encoded_files), 1):
         input_encoded_batch = input_encoded_files[i]
         input_encoded_bitrate = calculate_bitrate(input_encoded_batch)
-        input_encoded_bitrate = input_encoded_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_encoded_bitrate = input_encoded_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_encoded_bitrate_array.append(input_encoded_bitrate)
         input_encoded_size = calculate_size(input_encoded_batch)
         input_encoded_size_array.append(input_encoded_size)
@@ -464,7 +465,7 @@ def main():
     for i in range(0, len(input_decoded_files), 1):
         input_decoded_batch = input_decoded_files[i]
         input_decoded_bitrate = calculate_bitrate(input_decoded_batch)
-        input_decoded_bitrate = input_decoded_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        input_decoded_bitrate = input_decoded_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         input_decoded_bitrate_array.append(input_decoded_bitrate)
         input_decoded_size = calculate_size(input_decoded_batch)
         input_decoded_size_array.append(input_decoded_size)
@@ -480,7 +481,7 @@ def main():
     for i in range(0, len(nearest_neighbor_files), 1):
         nearest_neighbor_batch = nearest_neighbor_files[i]
         nearest_neighbor_bitrate = calculate_bitrate(nearest_neighbor_batch)
-        nearest_neighbor_bitrate = nearest_neighbor_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        nearest_neighbor_bitrate = nearest_neighbor_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         nearest_neighbor_quarter_bitrate_array.append(nearest_neighbor_bitrate)
         nearest_neighbor_size = calculate_size(nearest_neighbor_batch)
         nearest_neighbor_quarter_size_array.append(nearest_neighbor_size)
@@ -496,7 +497,7 @@ def main():
     for i in range(0, len(bilinear_files), 1):
         bilinear_batch = bilinear_files[i]
         bilinear_bitrate = calculate_bitrate(bilinear_batch)
-        bilinear_bitrate = bilinear_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        bilinear_bitrate = bilinear_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         bilinear_quarter_bitrate_array.append(bilinear_bitrate)
         bilinear_size = calculate_size(bilinear_batch)
         bilinear_quarter_size_array.append(bilinear_size)
@@ -512,7 +513,7 @@ def main():
     for i in range(0, len(bicubic_files), 1):
         bicubic_batch = bicubic_files[i]
         bicubic_bitrate = calculate_bitrate(bicubic_batch)
-        bicubic_bitrate = bicubic_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        bicubic_bitrate = bicubic_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         bicubic_quarter_bitrate_array.append(bicubic_bitrate)
         bicubic_size = calculate_size(bicubic_batch)
         bicubic_quarter_size_array.append(bicubic_size)
@@ -528,7 +529,7 @@ def main():
     for i in range(0, len(lanczos_files), 1):
         lanczos_batch = lanczos_files[i]
         lanczos_bitrate = calculate_bitrate(lanczos_batch)
-        lanczos_bitrate = lanczos_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        lanczos_bitrate = lanczos_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         lanczos_quarter_bitrate_array.append(lanczos_bitrate)
         lanczos_size = calculate_size(lanczos_batch)
         lanczos_quarter_size_array.append(lanczos_size)
@@ -544,7 +545,7 @@ def main():
     for i in range(0, len(pixel_area_relation_files), 1):
         pixel_area_relation_batch = pixel_area_relation_files[i]
         pixel_area_relation_bitrate = calculate_bitrate(pixel_area_relation_batch)
-        pixel_area_relation_bitrate = pixel_area_relation_bitrate/(1024 * 1024) # Convert bits/frame to megabits/frame
+        pixel_area_relation_bitrate = pixel_area_relation_bitrate/(1000 * 1000) # Convert bits/frame to megabits/frame
         pixel_area_relation_quarter_bitrate_array.append(pixel_area_relation_bitrate)
         pixel_area_relation_size = calculate_size(pixel_area_relation_batch)
         pixel_area_relation_quarter_size_array.append(pixel_area_relation_size)
@@ -593,8 +594,8 @@ def main():
     # image_path = input("Enter the path to the image file: ")
     # bitrate = calculate_bitrate(image_path)
     # print("Bitrate:", bitrate, "bits/frame")
-    # print("Bitrate:", bitrate/1024, "kilobits/frame")
-    # print("Bitrate:", bitrate/(1024 * 1024), "megabits/frame")
+    # print("Bitrate:", bitrate/1000, "kilobits/frame")
+    # print("Bitrate:", bitrate/(1000 * 1000), "megabits/frame")
 
 if __name__ == "__main__":
     main()
