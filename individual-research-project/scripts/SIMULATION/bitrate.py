@@ -232,7 +232,7 @@ def plot_bar_chart(mean_input,
     # Customise x-axis labels
     plt.xticks(rotation=15, ha="right", rotation_mode="anchor", fontsize=8.2)
     # Title and label the bar chart
-    plt.title('Average bitrate in 25 images')
+    plt.title('Average static bitrate in 25 images')
     # plt.xlabel('Downsampling (Distortion)')
     plt.ylabel('Bitrate: Megabits')
     # Save the figure
